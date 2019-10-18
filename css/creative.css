@@ -14,7 +14,11 @@ body {
   font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
 }
 
-
+.textdiv{
+  vertical-align: true;
+  text-align: center;
+  margin: auto;
+}
 .centered {
   text-align: center;
   position: absolute;
