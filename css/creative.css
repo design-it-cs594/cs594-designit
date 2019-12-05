@@ -499,3 +499,8 @@ header.masthead p {
   border: 0;
   transition: all .2s ease;
 }
+
+.product-listing {
+  height: 100%;
+  width: 100%;
+}
