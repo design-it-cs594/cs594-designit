@@ -1,3 +1,5 @@
 <?php
-return 5;
+
+$obj = $_GET['object']
+return $obj;
 ?>

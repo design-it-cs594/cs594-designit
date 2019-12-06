@@ -127,6 +127,7 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
+    data: ({object: "sofa"}),
     url: "recommendation_engine.php",
     "headers": {
               "accept": "application/text",
