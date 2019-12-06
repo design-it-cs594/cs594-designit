@@ -133,8 +133,8 @@ function recommendation(){
               "accept": "application/text",
               "Access-Control-Allow-Origin":"*"
           },
-    success: function(d){
-      alert("dsskkjbc")
+    success: function(response){
+      alert(response)
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
