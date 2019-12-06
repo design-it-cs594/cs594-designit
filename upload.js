@@ -123,21 +123,45 @@ function displayTags(data, dom) {
 }
 
 function recommendation(){
-  alert("in recommendation")
-  $.ajax({
-    type: "GET",
-    url: "recommendation_engine.php",
-    success: function(data){
-      // alert("kfdvbkh")
-      alert(data)
-    },
-      error: function (jqXHR, textStatus, errorThrown) {
-          console.log(errorThrown);
-          console.log(textStatus);
-          console.log(jqXHR);
-          alert('errorThrown');
-      }
-  });
+  alert("in recommendation");
+  // $.ajax({
+  //   type: "GET",
+  //   url: "recommendation_engine.php",
+  //   success: function(data){
+  //     // alert("kfdvbkh")
+  //     alert(data)
+  //   },
+  //     error: function (jqXHR, textStatus, errorThrown) {
+  //         console.log(errorThrown);
+  //         console.log(textStatus);
+  //         console.log(jqXHR);
+  //         alert('errorThrown');
+  //     }
+  //   var data;
+    // $.ajax({
+    //     type: "GET",
+    //     url: "js-tutorials.com_sample_file.csv",
+    //     dataType: "text",
+    //     success: function(response)
+    //     {
+    //         data = $.csv.toArrays(response);
+    //         generateHtmlTable(data);
+    //     }
+    // });
+
+    $.getJSON('sofa.json', function(data) {
+        //do stuff with your data here
+        console.log(data.length)
+        alert(data[0])
+        // var mydata = JSON.parse(data);
+        // alert(mydata.length);
+        // for(var i = 0;i < data.length; i++)
+        // {
+        //   alert(data[i])
+        //     // console.log(data[i])
+        //     // div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
+        // }
+    });
 }
 
 form.onsubmit = function() {
