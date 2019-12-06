@@ -181,89 +181,11 @@ document.getElementById("submit-button").onclick = function recommendation(){
         console.log(value[i].Image);
         console.log(value[i].ProductLink);
 
-
-              //     displayProducts(data[i]);
         }
-      // })
-        // $.each(data, function(key, value){
-        //     console.log(value[i].Brand);
-        //     console.log(value[i].Price);
-        //     console.log(value[i].Seller);
-        //     console.log(value[i].Image);
-        //     console.log(value[i].ProductLink);
-        //     console.log(value[i]);
-        //     // html += '<div class="dcell">';
-        //     // html += '<img src='+value[i].Image+'/>';
-        //     // html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
-        //     // // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
-        //     // html += '</div>';
-        //     i = i + 1;
-        // });
-    // $('#yourContainerId').html(html);
-    
-      //   for(let i = 0; i < data.length; i++){
-      //     console.log( data[i].ProductLink );
-      //     displayProducts(data[i]);
-      //   }
-      // })
-      //   .done(function() {
-      //     console.log( "done - success" );
-      //   })
-      //   .fail(function() {
-      //     console.log( "error" );
-      //               console.log("Error loading json file"); 
-      //   })
-      //   .always(function() {
-      //     console.log( "complete" );
         });
-  // var obj = JSON.parse("sofa.json");
-  // console.log(obj)
-  // $.ajax({
-  //   type: "GET",
-  //   url: "recommendation_engine.php",
-  //   success: function(data){
-  //     // alert("kfdvbkh")
-  //     alert(data)
-  //   },
-  //     error: function (jqXHR, textStatus, errorThrown) {
-  //         console.log(errorThrown);
-  //         console.log(textStatus);
-  //         console.log(jqXHR);
-  //         alert('errorThrown');
-  //     }
-  //   var data;
-    // $.ajax({
-    //     type: "GET",
-    //     url: "js-tutorials.com_sample_file.csv",
-    //     dataType: "text",
-    //     success: function(response)
-    //     {
-    //         data = $.csv.toArrays(response);
-    //         generateHtmlTable(data);
-    //     }
-    // });
-
-    // $.getJSON('sofa.json', function(data) {
-    //     //do stuff with your data here
-    //     // console.log(typeof data)
-    //     // console.log(typeof data.length) 
-    //     var obj = JSON.parse(data, function (key, value) {
-    //         console.log(key)
-    //     });
-    //     // alert(data[0])
-    //     // var mydata = JSON.parse(data);
-    //     // alert(mydata.length);
-    //     // for(var i = 0;i < data.length; i++)
-    //     // {
-    //     //   alert(data[i])
-    //     //     // console.log(data[i])
-    //     //     // div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
-    //     // }
-    // });
 }
 
 form.onsubmit = function() {
-  alert("Hi THis is an ALERT");
   
   uploadImage()
   recommendation()
