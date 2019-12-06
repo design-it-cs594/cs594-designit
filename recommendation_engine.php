@@ -1,5 +1,6 @@
 <?php
-
-$arr['obj'] = "j";
-echo json_encode($arr);
+$x=5;
+echo $x;
+// $arr['obj'] = "j";
+// echo json_encode($arr);
 ?>
