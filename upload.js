@@ -153,7 +153,7 @@ function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-6 mx-auto text-center">
+          <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
