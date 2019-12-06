@@ -127,10 +127,14 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
-    url: "recommendation_engine.py"
+    url: "recommendation_engine.py/recommendation",
+    "headers": {
+              "accept": "application/json",
+              "Access-Control-Allow-Origin":"*"
+          }
   }).done(function( o ) {
      // do something
-     alert("Back from recommendation")
+     alert(o)
   });
 }
 
