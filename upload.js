@@ -136,7 +136,7 @@ document.getElementById("submit-button").onclick = function recommendation(){
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row" id="suggestions-class">
-          <div class="col-lg-5 mx-auto text-center product-listing">
+          <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -153,7 +153,7 @@ document.getElementById("submit-button").onclick = function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-5 mx-auto text-center product-listing">
+          <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -262,7 +262,7 @@ document.getElementById("submit-button").onclick = function recommendation(){
     // });
 }
 
-form.onsubmit = function() {
+document.getElementById("uploadImage").onclick = function fun() {
   alert("Hi THis is an ALERT");
   
   uploadImage()
