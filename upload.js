@@ -127,7 +127,7 @@ function recommendation(){
   var jqxhr = $.getJSON( "sofa.json", function(data) {
         console.log( "success" );
         for(let i = 0; i < data.length; i++){
-          console.log( data[i].ID );
+          console.log( data[i].ProductLink );
         }
       })
         .done(function() {
