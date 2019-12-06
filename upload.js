@@ -127,12 +127,81 @@ function recommendation(){
   var jqxhr = $.getJSON( "sofa.json", function(value) {
         console.log( "success" );
          var i = 0;
+         container = document.getElementById("suggestions-class")
+
          for(let i = 0; i < value.length; i++){
+            if (i%2==0){
+              let markup = `<div class="row" id="suggestions-class">
+            <div class="col-lg-6 mx-auto text-center product-listing">
+              <a href="http://google.com">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
+                  </div>
+                  <div class="col-lg-4 text-center">
+                    <div class="center-text-class">
+                      <p>SÖDERHAMN</p> 
+                      <p> IKEA</p>
+                    </div>
+                  </div>
+
+
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-6 mx-auto text-center">
+              <hr class="dark my-4">
+              <p class="text-dark-faded mb-4">Products from database</p>
+            </div>
+          </div>`
+            }
+            else{
+              let markup = `<div class="col-lg-6 mx-auto text-center product-listing">
+                <a href="http://google.com">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="center-text-class">
+                        <p>SÖDERHAMN</p> 
+                        <p> IKEA</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-6 mx-auto text-center product-listing">
+                <a href="http://google.com">
+                  <div class="row">
+                    <div class="col-lg-8">
+                      <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="center-text-class">
+                        <p>SÖDERHAMN</p> 
+                        <p> IKEA</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </a>
+              </div>
+              </div>`
+            }
+            container.innerHTML += markup
+
+
             console.log(value[i].Brand);
             console.log(value[i].Price);
             console.log(value[i].Seller);
             console.log(value[i].Image);
             console.log(value[i].ProductLink);
+
+
               //     displayProducts(data[i]);
         }
       // })
@@ -215,8 +284,8 @@ function recommendation(){
 
 form.onsubmit = function() {
   alert("Hi THis is an ALERT");
-  // recommendation()
-  uploadImage()
+  recommendation()
+  // uploadImage()
   return false;
 }
 
