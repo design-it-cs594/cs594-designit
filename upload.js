@@ -124,6 +124,8 @@ function displayTags(data, dom) {
 
 function recommendation(){
   alert("in recommendation");
+  var obj = JSON.parse(data);
+  console.log(obj)
   // $.ajax({
   //   type: "GET",
   //   url: "recommendation_engine.php",
@@ -149,23 +151,23 @@ function recommendation(){
     //     }
     // });
 
-    $.getJSON('sofa.json', function(data) {
-        //do stuff with your data here
-        // console.log(typeof data)
-        // console.log(typeof data.length) 
-        var obj = JSON.parse(text, function (key, value) {
-            console.log(key)
-        });
-        // alert(data[0])
-        // var mydata = JSON.parse(data);
-        // alert(mydata.length);
-        // for(var i = 0;i < data.length; i++)
-        // {
-        //   alert(data[i])
-        //     // console.log(data[i])
-        //     // div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
-        // }
-    });
+    // $.getJSON('sofa.json', function(data) {
+    //     //do stuff with your data here
+    //     // console.log(typeof data)
+    //     // console.log(typeof data.length) 
+    //     var obj = JSON.parse(data, function (key, value) {
+    //         console.log(key)
+    //     });
+    //     // alert(data[0])
+    //     // var mydata = JSON.parse(data);
+    //     // alert(mydata.length);
+    //     // for(var i = 0;i < data.length; i++)
+    //     // {
+    //     //   alert(data[i])
+    //     //     // console.log(data[i])
+    //     //     // div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
+    //     // }
+    // });
 }
 
 form.onsubmit = function() {
