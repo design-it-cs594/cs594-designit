@@ -131,7 +131,7 @@ function recommendation(){
     url: "recommendation_engine.php",
     dataType: 'json',
     success: function(data){
-      alert(response);
+      alert(data);
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
