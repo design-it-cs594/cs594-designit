@@ -170,7 +170,7 @@ document.getElementById("submit-button").onclick = function recommendation(){
               </div>
             </a>
           </div>
-        </div>`
+        </div> <br />`
         i = i+1
         container.innerHTML += markup
 
