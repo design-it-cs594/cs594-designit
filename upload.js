@@ -126,11 +126,10 @@ function recommendation(){
   alert("in recommendation")
   $.ajax({
     type: "GET",
-    crossDomain: true,
     url: "recommendation_engine.php",
     success: function(data){
       // alert("kfdvbkh")
-      alert(data.id)
+      alert(data)
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
