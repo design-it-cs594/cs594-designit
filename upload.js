@@ -67,7 +67,7 @@ function uploadToCloudant(doc) {
       contentType: 'application/json',
       success: function (data) {
 
-        // alert("Uploaded the Image Successfully in Cloudant");
+        alert("Uploaded the Image Successfully to Cloudant");
 
         // get tags from cloudant
         // add 1.5s delay to give time for serverless function to execute
