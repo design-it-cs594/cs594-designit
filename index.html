@@ -173,28 +173,18 @@
                                 </form>
                             </div>
                         </div>
+
                         <div class="col-6 padding">
-                            
-                          <div class="file-upload">
-                            <!-- <button style="background-color:#393939; border: none;" class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger('click')">Add Image</button> -->
-
-                            <div class="image-upload-wrap">
-                              <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-                              <div class="drag-text">
-                                <h3>Drag and drop a file or click and choose Image</h3>
-                              </div>
-                            </div>
-                            <div class="file-upload-content">
-                              <img class="file-upload-image" src="#" alt="your image" />
-                              <div class="image-title-wrap">
-                                <button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
-                              </div>
-                            </div>
 
 
+                           <!-- Upload section -->
+                          <div class="uploadSection">
+                              <form class="uploadForm" method="post" name="upload" enctype="multipart/form-data" action="">
+                                <input class="selectImage" id="selectImage" type="file" name="myImage" accept="image/*" />
+                                <input class="uploadImage" id="uploadImage" type="submit" value="Upload" />
+                              </form>
                           </div>
-
-                          
+                          <div class="uploadedImages" id="uploadedImages"></div>
                         </div>
                     <!-- </div> -->
         </div>
@@ -277,6 +267,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script src="./upload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </body>
 
