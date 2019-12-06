@@ -165,7 +165,7 @@ function recommendation(){
 }
 
 form.onsubmit = function() {
-  // alert("Hi THis is an ALERT");
+  alert("Hi THis is an ALERT");
   recommendation()
   // uploadImage()
   return false;
