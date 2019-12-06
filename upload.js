@@ -125,7 +125,7 @@ function displayTags(data, dom) {
 function recommendation(){
   alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(data) {
-        // console.log( "success" );
+        console.log( "success" );
          var i = 0;
         $.each(data, function(key, value){
             console.log(value[i].Brand);
@@ -133,7 +133,7 @@ function recommendation(){
             console.log(value[i].Seller);
             console.log(value[i].Image);
             console.log(value[i].ProductLink);
-
+            console.log(value[i]);
             // html += '<div class="dcell">';
             // html += '<img src='+value[i].Image+'/>';
             // html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
