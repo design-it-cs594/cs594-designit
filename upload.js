@@ -129,7 +129,7 @@ function recommendation(){
     crossDomain: true,
     url: "recommendation_engine.py/recommendation",
     "headers": {
-              "accept": "application/json",
+              "accept": "application/text",
               "Access-Control-Allow-Origin":"*"
           }
   }).done(function( o ) {
