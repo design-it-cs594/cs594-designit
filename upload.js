@@ -126,19 +126,31 @@ function recommendation(){
   alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(data) {
         console.log( "success" );
-        for(let i = 0; i < data.length; i++){
-          console.log( data[i].ProductLink );
-        }
-      })
-        .done(function() {
-          console.log( "done - success" );
-        })
-        .fail(function() {
-          console.log( "error" );
-                    console.log("Error loading json file"); 
-        })
-        .always(function() {
-          console.log( "complete" );
+         // var html = '';
+        $.each(data, function(key, value){
+          console.log(key);
+            // html += '<div class="dcell">';
+            // html += '<img src="images/'+value.product+'.png"/>';
+            // html += '<label for="'+value.product+'">'+value.name+':</label>';
+            // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
+            // html += '</div>';
+        });
+    // $('#yourContainerId').html(html);
+    
+      //   for(let i = 0; i < data.length; i++){
+      //     console.log( data[i].ProductLink );
+      //     displayProducts(data[i]);
+      //   }
+      // })
+      //   .done(function() {
+      //     console.log( "done - success" );
+      //   })
+      //   .fail(function() {
+      //     console.log( "error" );
+      //               console.log("Error loading json file"); 
+      //   })
+      //   .always(function() {
+      //     console.log( "complete" );
         });
   // var obj = JSON.parse("sofa.json");
   // console.log(obj)
