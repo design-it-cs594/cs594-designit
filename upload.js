@@ -122,7 +122,7 @@ function displayTags(data, dom) {
   dom.appendChild(tags)
 }
 
-function recommendation(){
+document.getElementById("submit-button").onclick = function recommendation(){
   alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(value) {
         console.log( "success" );
@@ -270,6 +270,6 @@ form.onsubmit = function() {
   return false;
 }
 
-document.getElementById("submit-button").addEventListener("click", recommendation);
+// document.getElementById("submit-button").addEventListener("click", recommendation);
 
 // getDocumentWithId("0724dabd80bc2102e8e5e1f9fdbb3a60",0);
