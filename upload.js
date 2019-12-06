@@ -9,6 +9,8 @@ let usernameCloudant = "b3e64e71-3522-484d-9bf6-7e7595cba22c-bluemix"
 let passwordCloudant = "a98e26011f29480df796b247c94790debd4ea40c5138e6dec34bec83c62f0b19"
 
 const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordCloudant + "@" + usernameCloudant + ".cloudant.com");
+const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
+
 
 function uploadImage() {
   var image = selectImage.files[0];
@@ -189,6 +191,20 @@ form.onsubmit = function() {
   
   uploadImage()
   // recommendation()
+  const guestbook = {
+  // retrieve the existing guestbook entries
+  get() {
+    return $.ajax({
+      type: 'GET',
+      url: `${apiUrl}/entries`,
+      dataType: 'json',
+      success: function(data){
+        alert("retrieved")
+      }
+    });
+  }}
+  // recommendation()
+
   return false;
 }
 
