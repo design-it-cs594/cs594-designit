@@ -124,68 +124,68 @@ function displayTags(data, dom) {
   dom.appendChild(tags)
 }
 
-// document.getElementById("submit-button").onclick = function recommendation(){
-//   alert("in recommendation");
-//   var jqxhr = $.getJSON( "sofa.json", function(value) {
-//         console.log( "success" );
-//          var i = 0;
-//          let markup = ``
-//          let container = document.getElementById("suggestions-class")
-//          alert("Created container")
-//          if (value.length%2==1){
-//           value.pop();
-//          }
-//          for(let i = 0; i < value.length; i++){
-//             // alert(i)
-//             let markup = `<div class="row" id="suggestions-class">
-//           <div class="col-lg-6 mx-auto text-center product-listing">
-//             <a href="http://google.com">
-//               <div class="row">
-//                 <div class="col-lg-8">
-//                   <img class="picture-listing" src=`+value[i].Image+`alt="Smiley face">
-//                 </div>
-//                 <div class="col-lg-4 text-center">
-//                   <div class="center-text-class">
-//                     <p>`+value[i].Brand+`</p> 
-//                     <p>`+value[i].Seller+`</p>
-//                   </div>
-//                 </div>
+function recommendation(){
+  alert("in recommendation");
+  var jqxhr = $.getJSON( "sofa.json", function(value) {
+        console.log( "success" );
+         var i = 0;
+         let markup = ``
+         let container = document.getElementById("suggestions-class")
+         alert("Created container")
+         if (value.length%2==1){
+          value.pop();
+         }
+         for(let i = 0; i < value.length; i++){
+            // alert(i)
+            let markup = `<div class="row" id="suggestions-class">
+          <div class="col-lg-6 mx-auto text-center product-listing">
+            <a href="http://google.com">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img class="picture-listing" src=`+value[i].Image+`alt="Smiley face">
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="center-text-class">
+                    <p>`+value[i].Brand+`</p> 
+                    <p>`+value[i].Seller+`</p>
+                  </div>
+                </div>
 
 
-//               </div>
-//             </a>
-//           </div>
-//           <div class="col-lg-6 mx-auto text-center product-listing">
-//             <a href="http://google.com">
-//               <div class="row">
-//                 <div class="col-lg-8">
-//                   <img class="picture-listing" src=`+value[i+1].Image+`alt="Smiley face">
-//                 </div>
-//                 <div class="col-lg-4 text-center">
-//                   <div class="center-text-class">
-//                     <p>`+value[i+1].Brand+`</p> 
-//                     <p>`+value[i+1].Seller+`</p>
-//                   </div>
-//                 </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mx-auto text-center product-listing">
+            <a href="http://google.com">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img class="picture-listing" src=`+value[i+1].Image+`alt="Smiley face">
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="center-text-class">
+                    <p>`+value[i+1].Brand+`</p> 
+                    <p>`+value[i+1].Seller+`</p>
+                  </div>
+                </div>
 
 
-//               </div>
-//             </a>
-//           </div>
-//         </div> <br />`
-//         i = i+1
-//         container.innerHTML += markup
+              </div>
+            </a>
+          </div>
+        </div> <br />`
+        i = i+1
+        container.innerHTML += markup
 
 
-//         console.log(value[i].Brand);
-//         console.log(value[i].Price);
-//         console.log(value[i].Seller);
-//         console.log(value[i].Image);
-//         console.log(value[i].ProductLink);
+        console.log(value[i].Brand);
+        console.log(value[i].Price);
+        console.log(value[i].Seller);
+        console.log(value[i].Image);
+        console.log(value[i].ProductLink);
 
-//         }
-//         });
-// }
+        }
+        });
+}
 
 form.onsubmit = function() {
   
@@ -203,7 +203,7 @@ form.onsubmit = function() {
       }
     });
   }}
-  // recommendation()
+  recommendation()
 
   return false;
 }
