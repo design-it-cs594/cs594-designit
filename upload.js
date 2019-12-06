@@ -67,7 +67,7 @@ function uploadToCloudant(doc) {
       contentType: 'application/json',
       success: function (data) {
 
-        alert("Uploaded the Image Successfully in Cloudant");
+        // alert("Uploaded the Image Successfully in Cloudant");
 
         // get tags from cloudant
         // add 1.5s delay to give time for serverless function to execute
@@ -125,13 +125,13 @@ function displayTags(data, dom) {
 }
 
 function recommendation(){
-  alert("in recommendation");
+  // alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(value) {
         console.log( "success" );
          var i = 0;
          let markup = ``
          let container = document.getElementById("suggestions-class")
-         alert("Created container")
+         // alert("Created container")
          if (value.length%2==1){
           value.pop();
          }
@@ -190,25 +190,7 @@ function recommendation(){
 form.onsubmit = function() {
   
   uploadImage()
-  // recommendation()
-  // guestbook()
-  const guestbook = {
-  // retrieve the existing guestbook entries
-  get() {
-    return $.ajax({
-      type: 'GET',
-      url: `${apiUrl}/entries`,
-      dataType: 'json',
-      success: function(data){
-        alert("retrieved")
-      }
-    });
-  }}
   recommendation()
 
   return false;
 }
-
-// document.getElementById("submit-button").addEventListener("click", recommendation);
-
-// getDocumentWithId("0724dabd80bc2102e8e5e1f9fdbb3a60",0);
