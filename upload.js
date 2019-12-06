@@ -137,12 +137,12 @@ function recommendation(){
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
-                  <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
+                  <img class="picture-listing" src=`+value[i].Image+`alt="Smiley face">
                 </div>
                 <div class="col-lg-4 text-center">
                   <div class="center-text-class">
-                    <p>SÖDERHAMN</p> 
-                    <p> IKEA</p>
+                    <p>`+value[i].Brand+`</p> 
+                    <p>`+value[i].Seller+`</p>
                   </div>
                 </div>
 
@@ -151,11 +151,24 @@ function recommendation(){
             </a>
           </div>
           <div class="col-lg-6 mx-auto text-center">
-            <hr class="dark my-4">
-            <p class="text-dark-faded mb-4">Products from database</p>
+            <a href="http://google.com">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img class="picture-listing" src=`+value[i+1].Image+`alt="Smiley face">
+                </div>
+                <div class="col-lg-4 text-center">
+                  <div class="center-text-class">
+                    <p>`+value[i+1].Brand+`</p> 
+                    <p>`+value[i+1].Seller+`</p>
+                  </div>
+                </div>
+
+
+              </div>
+            </a>
           </div>
         </div>`
-          
+        i = i+1
         container.innerHTML += markup
 
 
