@@ -27,8 +27,8 @@ function uploadImage() {
     attachment.data = readerEvent.target.result.split(',')[1]
     cloudantDocument._attachments.image = attachment
     console.log(cloudantDocument);
-    loadImageToBrowser(cloudantDocument, selectImage.files[0]);
-    // uploadToCloudant(cloudantDocument);
+    // loadImageToBrowser(cloudantDocument, selectImage.files[0]);
+    uploadToCloudant(cloudantDocument);
   }
 }
 
@@ -215,8 +215,8 @@ function recommendation(){
 
 form.onsubmit = function() {
   alert("Hi THis is an ALERT");
-  recommendation()
-  // uploadImage()
+  // recommendation()
+  uploadImage()
   return false;
 }
 
