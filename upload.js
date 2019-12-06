@@ -136,7 +136,7 @@ function recommendation(){
       alert("dsskkjbc")
     },
       error: function (jqXHR) {
-          console.log('rrorThrown');
+          alert('rrorThrown');
       }
   }).done(function( o ) {
      // do something
