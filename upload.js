@@ -129,12 +129,9 @@ function recommendation(){
     crossDomain: true,
     data: ({object: "sofa"}),
     url: "recommendation_engine.php",
-    "headers": {
-              "accept": "application/text",
-              "Access-Control-Allow-Origin":"*"
-          },
-    success: function(response){
-      alert(response)
+    dataType: 'json',
+    success: function(data){
+      alert(response);
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
