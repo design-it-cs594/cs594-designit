@@ -1,5 +1,5 @@
 <?php
 
-$obj = $_GET['object']
-echo json_encode(array('obj'=>$obj));
+$arr['obj'] = $POST['object']
+echo json_encode($arr);
 ?>
