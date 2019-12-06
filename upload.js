@@ -128,6 +128,7 @@ function recommendation(){
     type: "GET",
     crossDomain: true,
     data: {object: "sofa"},
+    dataType: 'json',
     url: "recommendation_engine.php",
     success: function(response){
       alert(response.obj);
