@@ -130,8 +130,11 @@ function recommendation(){
          let markup = ``
          let container = document.getElementById("suggestions-class")
          alert("Created container")
+         if (value.length%2==1){
+          value.pop();
+         }
          for(let i = 0; i < value.length; i++){
-            alert(i)
+            // alert(i)
             let markup = `<div class="row" id="suggestions-class">
           <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
