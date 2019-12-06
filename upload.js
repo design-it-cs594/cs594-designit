@@ -134,7 +134,10 @@ function recommendation(){
           },
     success: function(d){
       alert("dsskkjbc")
-    }
+    },
+      error: function (jqXHR) {
+          console.log('rrorThrown');
+      }
   }).done(function( o ) {
      // do something
      alert("dvddf")
