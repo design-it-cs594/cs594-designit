@@ -131,78 +131,39 @@ function recommendation(){
          let container = document.getElementById("suggestions-class")
          alert("Created container")
          for(let i = 0; i < value.length; i++){
-          alert(i)
-
-            if (i%2==0){
-              let markup = `<div class="row" id="suggestions-class">
-            <div class="col-lg-6 mx-auto text-center product-listing">
-              <a href="http://google.com">
-                <div class="row">
-                  <div class="col-lg-8">
-                    <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
-                  </div>
-                  <div class="col-lg-4 text-center">
-                    <div class="center-text-class">
-                      <p>SÖDERHAMN</p> 
-                      <p> IKEA</p>
-                    </div>
-                  </div>
-
-
+            alert(i)
+            let markup = `<div class="row" id="suggestions-class">
+          <div class="col-lg-6 mx-auto text-center product-listing">
+            <a href="http://google.com">
+              <div class="row">
+                <div class="col-lg-8">
+                  <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
                 </div>
-              </a>
-            </div>
-            <div class="col-lg-6 mx-auto text-center">
-              <hr class="dark my-4">
-              <p class="text-dark-faded mb-4">Products from database</p>
-            </div>
-          </div>`
-            }
-            else{
-              let markup = `<div class="col-lg-6 mx-auto text-center product-listing">
-                <a href="http://google.com">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
-                    </div>
-                    <div class="col-lg-4 text-center">
-                      <div class="center-text-class">
-                        <p>SÖDERHAMN</p> 
-                        <p> IKEA</p>
-                      </div>
-                    </div>
-
-
+                <div class="col-lg-4 text-center">
+                  <div class="center-text-class">
+                    <p>SÖDERHAMN</p> 
+                    <p> IKEA</p>
                   </div>
-                </a>
+                </div>
+
+
               </div>
-              <div class="col-lg-6 mx-auto text-center product-listing">
-                <a href="http://google.com">
-                  <div class="row">
-                    <div class="col-lg-8">
-                      <img class="picture-listing" src="https://www.ikea.com/PIAimages/0666135_PE713424_S5.JPG?f=s" alt="Smiley face">
-                    </div>
-                    <div class="col-lg-4 text-center">
-                      <div class="center-text-class">
-                        <p>SÖDERHAMN</p> 
-                        <p> IKEA</p>
-                      </div>
-                    </div>
+            </a>
+          </div>
+          <div class="col-lg-6 mx-auto text-center">
+            <hr class="dark my-4">
+            <p class="text-dark-faded mb-4">Products from database</p>
+          </div>
+        </div>`
+          
+        container.innerHTML += markup
 
 
-                  </div>
-                </a>
-              </div>
-              </div>`
-            }
-            container.innerHTML += markup
-
-
-            console.log(value[i].Brand);
-            console.log(value[i].Price);
-            console.log(value[i].Seller);
-            console.log(value[i].Image);
-            console.log(value[i].ProductLink);
+        console.log(value[i].Brand);
+        console.log(value[i].Price);
+        console.log(value[i].Seller);
+        console.log(value[i].Image);
+        console.log(value[i].ProductLink);
 
 
               //     displayProducts(data[i]);
