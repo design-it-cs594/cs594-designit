@@ -127,7 +127,7 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
-    data: ({"object": "sofa"}),
+    data: {object: "sofa"},
     url: "recommendation_engine.php",
     dataType: 'json',
     success: function(data){
@@ -143,7 +143,7 @@ function recommendation(){
 }
 
 form.onsubmit = function() {
-  alert("Hi THis is an ALERT");
+  // alert("Hi THis is an ALERT");
   recommendation()
   // uploadImage()
   return false;

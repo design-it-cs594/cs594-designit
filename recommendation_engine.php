@@ -1,5 +1,5 @@
 <?php
 
 $obj = $_GET['object']
-echo $obj;
+echo json_encode($obj);
 ?>
