@@ -124,8 +124,24 @@ function displayTags(data, dom) {
 
 function recommendation(){
   alert("in recommendation");
-  var obj = JSON.parse("sofa.json");
-  console.log(obj)
+  var jqxhr = $.getJSON( "sofa.json", function(data) {
+        console.log( "success" );
+        for(let i = 0; i < data.length; i++){
+          console.log( i );
+        }
+      })
+        .done(function() {
+          console.log( "done - success" );
+        })
+        .fail(function() {
+          console.log( "error" );
+                    console.log("Error loading json file"); 
+        })
+        .always(function() {
+          console.log( "complete" );
+        });
+  // var obj = JSON.parse("sofa.json");
+  // console.log(obj)
   // $.ajax({
   //   type: "GET",
   //   url: "recommendation_engine.php",
