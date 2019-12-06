@@ -127,11 +127,11 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
-    data: ({object: "sofa"}),
+    data: ({"object": "sofa"}),
     url: "recommendation_engine.php",
     dataType: 'json',
     success: function(data){
-      alert(data);
+      alert("fd");
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
