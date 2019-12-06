@@ -192,10 +192,10 @@ form.onsubmit = function() {
   uploadImage()
   // recommendation()
   // guestbook()
-  const guestbook = {
+  // const guestbook = {
   // retrieve the existing guestbook entries
-  get() {
-    return $.ajax({
+  // get() {
+    $.ajax({
       type: 'GET',
       url: `${apiUrl}/entries`,
       dataType: 'json',
@@ -203,7 +203,7 @@ form.onsubmit = function() {
         alert("retrieved")
       }
     });
-  }}
+  // }}
   recommendation()
 
   return false;
