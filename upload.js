@@ -135,8 +135,11 @@ function recommendation(){
     success: function(d){
       alert("dsskkjbc")
     },
-      error: function (jqXHR) {
-          alert('rrorThrown');
+      error: function (jqXHR, textStatus, errorThrown) {
+          console.log(errorThrown);
+          console.log(textStatus);
+          console.log(jqXHR);
+          alert('errorThrown');
       }
   }).done(function( o ) {
      // do something
