@@ -130,7 +130,7 @@ function recommendation(){
     data: {object: "sofa"},
     url: "recommendation_engine.php",
     success: function(response){
-      alert(response);
+      alert(response.obj);
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
