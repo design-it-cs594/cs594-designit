@@ -130,7 +130,7 @@ function recommendation(){
     url: "recommendation_engine.php",
     success: function(data){
       // alert("kfdvbkh")
-      alert(data)
+      alert(data.id)
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
