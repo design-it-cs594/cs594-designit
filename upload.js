@@ -188,7 +188,7 @@ document.getElementById("submit-button").onclick = function recommendation(){
 form.onsubmit = function() {
   
   uploadImage()
-  recommendation()
+  // recommendation()
   return false;
 }
 
