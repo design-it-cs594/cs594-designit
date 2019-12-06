@@ -134,6 +134,7 @@ function recommendation(){
           }
   }).done(function( o ) {
      // do something
+     alert("dvddf")
      alert(o)
   });
 }
