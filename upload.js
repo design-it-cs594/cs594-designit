@@ -127,7 +127,7 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
-    url: "recommendation_engine.py/recommendation",
+    url: "recommendation_engine.php",
     "headers": {
               "accept": "application/text",
               "Access-Control-Allow-Origin":"*"
@@ -141,10 +141,6 @@ function recommendation(){
           console.log(jqXHR);
           alert('errorThrown');
       }
-  }).done(function( o ) {
-     // do something
-     alert("dvddf")
-     alert(o)
   });
 }
 
