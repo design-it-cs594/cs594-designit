@@ -129,8 +129,8 @@ function recommendation(){
     crossDomain: true,
     data: {object: "sofa"},
     url: "recommendation_engine.php",
-    dataType: 'json',
-    success: function(data){
+    dataType: "json",
+    success: function(response){
       alert("fd");
     },
       error: function (jqXHR, textStatus, errorThrown) {
