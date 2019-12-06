@@ -1,7 +1,5 @@
 <?php
+	$arr['id'] = "1";
 
-$arr['x']="5";
-echo json_encode($arr);
-// $arr['obj'] = "j";
-// echo json_encode($arr);
+	echo json_encode($arr);
 ?>
