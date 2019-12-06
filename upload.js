@@ -191,6 +191,7 @@ form.onsubmit = function() {
   
   uploadImage()
   // recommendation()
+  guestbook()
   const guestbook = {
   // retrieve the existing guestbook entries
   get() {
