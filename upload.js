@@ -128,10 +128,10 @@ function recommendation(){
     type: "GET",
     crossDomain: true,
     data: {object: "sofa"},
-    dataType: 'json',
+    dataType: "json",
     url: "recommendation_engine.php",
     success: function(response){
-      alert(response);
+      alert(response.obj);
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
