@@ -124,23 +124,32 @@ function displayTags(data, dom) {
 
 function recommendation(){
   alert("in recommendation");
-  var jqxhr = $.getJSON( "sofa.json", function(data) {
+  var jqxhr = $.getJSON( "sofa.json", function(value) {
         console.log( "success" );
          var i = 0;
-        $.each(data, function(key, value){
+         for(let i = 0; i < value.length; i++){
             console.log(value[i].Brand);
             console.log(value[i].Price);
             console.log(value[i].Seller);
             console.log(value[i].Image);
             console.log(value[i].ProductLink);
-            console.log(value[i]);
-            // html += '<div class="dcell">';
-            // html += '<img src='+value[i].Image+'/>';
-            // html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
-            // // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
-            // html += '</div>';
-            i = i + 1;
-        });
+              //     displayProducts(data[i]);
+        }
+      // })
+        // $.each(data, function(key, value){
+        //     console.log(value[i].Brand);
+        //     console.log(value[i].Price);
+        //     console.log(value[i].Seller);
+        //     console.log(value[i].Image);
+        //     console.log(value[i].ProductLink);
+        //     console.log(value[i]);
+        //     // html += '<div class="dcell">';
+        //     // html += '<img src='+value[i].Image+'/>';
+        //     // html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
+        //     // // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
+        //     // html += '</div>';
+        //     i = i + 1;
+        // });
     // $('#yourContainerId').html(html);
     
       //   for(let i = 0; i < data.length; i++){
