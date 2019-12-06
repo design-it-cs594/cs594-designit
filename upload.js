@@ -266,7 +266,7 @@ form.onsubmit = function() {
   alert("Hi THis is an ALERT");
   
   uploadImage()
-  // recommendation()
+  recommendation()
   return false;
 }
 
