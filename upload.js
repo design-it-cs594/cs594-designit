@@ -27,8 +27,8 @@ function uploadImage() {
     attachment.data = readerEvent.target.result.split(',')[1]
     cloudantDocument._attachments.image = attachment
     console.log(cloudantDocument);
-    // loadImageToBrowser(cloudantDocument, selectImage.files[0]);
-    uploadToCloudant(cloudantDocument);
+    loadImageToBrowser(cloudantDocument, selectImage.files[0]);
+    // uploadToCloudant(cloudantDocument);
   }
 }
 
@@ -47,7 +47,7 @@ function loadImageToBrowser(doc, imageToLoad) {
     imageHolder.appendChild(image);
     imageSection.appendChild(imageHolder);
     uploadedImages.prepend(imageSection);
-    uploadToCloudant(doc, imageSection);
+    uploadToCloudant(doc);
   }
 }
 
@@ -69,9 +69,10 @@ function uploadToCloudant(doc) {
 
         // get tags from cloudant
         // add 1.5s delay to give time for serverless function to execute
-        // setTimeout(function () {
-        //   getDocumentWithId(data.id, dom, 0);
-        // }, 1500);
+        setTimeout(function () {
+          // getDocumentWithId(data.id, doc, 0);
+        }, 1500);
+
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log(errorThrown);
@@ -121,9 +122,22 @@ function displayTags(data, dom) {
   dom.appendChild(tags)
 }
 
+function recommendation(){
+  alert("in recommendation")
+  $.ajax({
+    type: "GET",
+    crossDomain: true,
+    url: "recommendation_engine.py"
+  }).done(function( o ) {
+     // do something
+     alert("Back from recommendation")
+  });
+}
+
 form.onsubmit = function() {
   alert("Hi THis is an ALERT");
-  uploadImage()
+  recommendation()
+  // uploadImage()
   return false;
 }
 
