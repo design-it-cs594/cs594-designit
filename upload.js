@@ -125,13 +125,12 @@ function displayTags(data, dom) {
 function recommendation(){
   alert("in recommendation")
   $.ajax({
-    type: "GET",
+    type: "POST",
     crossDomain: true,
-    data: {object: "sofa"},
     dataType: "json",
     url: "recommendation_engine.php",
-    success: function(response){
-      alert(response.id);
+    success: function(data){
+      console.log(data)
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
