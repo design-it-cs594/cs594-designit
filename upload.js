@@ -127,7 +127,7 @@ function recommendation(){
   $.ajax({
     type: "GET",
     crossDomain: true,
-    dataType: "json",
+    // dataType: "json",
     url: "recommendation_engine.php",
     success: function(data){
       alert("kfdvbkh")
