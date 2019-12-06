@@ -136,7 +136,7 @@ function recommendation(){
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row" id="suggestions-class">
-          <div class="col-lg-6 mx-auto text-center product-listing">
+          <div class="col-lg-5 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -153,7 +153,7 @@ function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-6 mx-auto text-center product-listing">
+          <div class="col-lg-5 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -266,8 +266,10 @@ form.onsubmit = function() {
   alert("Hi THis is an ALERT");
   
   uploadImage()
-  recommendation()
+  // recommendation()
   return false;
 }
+
+document.getElementById("submit-button").addEventListener("click", recommendation);
 
 // getDocumentWithId("0724dabd80bc2102e8e5e1f9fdbb3a60",0);
