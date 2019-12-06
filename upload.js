@@ -138,11 +138,11 @@ document.getElementById("submit-button").onclick = function recommendation(){
             let markup = `<div class="row" id="suggestions-class">
           <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
-              <div class="row">
-                <div class="col-lg-8">
+              <div class="row mid-row">
+                <div class="col-lg-8 mid-col">
                   <img class="picture-listing" src=`+value[i].Image+`alt="Smiley face">
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center mid-col">
                   <div class="center-text-class">
                     <p>`+value[i].Brand+`</p> 
                     <p>`+value[i].Seller+`</p>
@@ -155,11 +155,11 @@ document.getElementById("submit-button").onclick = function recommendation(){
           </div>
           <div class="col-lg-6 mx-auto text-center product-listing">
             <a href="http://google.com">
-              <div class="row">
-                <div class="col-lg-8">
+              <div class="row mid-row">
+                <div class="col-lg-8 mid-col">
                   <img class="picture-listing" src=`+value[i+1].Image+`alt="Smiley face">
                 </div>
-                <div class="col-lg-4 text-center">
+                <div class="col-lg-4 text-center mid-col">
                   <div class="center-text-class">
                     <p>`+value[i+1].Brand+`</p> 
                     <p>`+value[i+1].Seller+`</p>

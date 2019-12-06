@@ -518,3 +518,14 @@ header.masthead p {
   /*border: 3px solid green;*/
   text-align: center;
 }
+
+.mid-row {
+  display: flex;
+
+  justify-content: center;
+
+  flex-flow:row wrap;
+}
+.mid-col {
+  float:none;
+}
