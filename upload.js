@@ -125,7 +125,7 @@ function displayTags(data, dom) {
 function recommendation(){
   alert("in recommendation")
   $.ajax({
-    type: "POST",
+    type: "GET",
     crossDomain: true,
     data: {object: "sofa"},
     // dataType: 'json',
