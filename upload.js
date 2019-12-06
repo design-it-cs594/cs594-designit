@@ -128,7 +128,7 @@ function recommendation(){
         console.log( "success" );
          // var html = '';
         $.each(data, function(key, value){
-          console.log(key);
+          console.log(value);
             // html += '<div class="dcell">';
             // html += '<img src="images/'+value.product+'.png"/>';
             // html += '<label for="'+value.product+'">'+value.name+':</label>';
