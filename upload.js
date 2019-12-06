@@ -124,7 +124,7 @@ function displayTags(data, dom) {
 
 function recommendation(){
   alert("in recommendation");
-  var obj = JSON.parse(data);
+  var obj = JSON.parse("sofa.json");
   console.log(obj)
   // $.ajax({
   //   type: "GET",
