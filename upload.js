@@ -131,7 +131,10 @@ function recommendation(){
     "headers": {
               "accept": "application/text",
               "Access-Control-Allow-Origin":"*"
-          }
+          },
+    success: function(d){
+      alert("dsskkjbc")
+    }
   }).done(function( o ) {
      // do something
      alert("dvddf")
