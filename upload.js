@@ -125,18 +125,23 @@ function displayTags(data, dom) {
 function recommendation(){
   alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(data) {
-        console.log( "success" );
-         var html = '';
+        // console.log( "success" );
          var i = 0;
         $.each(data, function(key, value){
-            html += '<div class="dcell">';
-            html += '<img src='+value[i].Image+'/>';
-            html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
-            // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
-            html += '</div>';
+            console.log(value[i].Brand);
+            console.log(value[i].Price);
+            console.log(value[i].Seller);
+            console.log(value[i].Image);
+            console.log(value[i].ProductLink);
+
+            // html += '<div class="dcell">';
+            // html += '<img src='+value[i].Image+'/>';
+            // html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
+            // // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
+            // html += '</div>';
             i = i + 1;
         });
-    $('#yourContainerId').html(html);
+    // $('#yourContainerId').html(html);
     
       //   for(let i = 0; i < data.length; i++){
       //     console.log( data[i].ProductLink );
