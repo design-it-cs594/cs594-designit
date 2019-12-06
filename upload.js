@@ -128,8 +128,9 @@ function recommendation(){
         console.log( "success" );
          var i = 0;
          container = document.getElementById("suggestions-class")
-
+         alert("Created container")
          for(let i = 0; i < value.length; i++){
+          alert(i)
             if (i%2==0){
               let markup = `<div class="row" id="suggestions-class">
             <div class="col-lg-6 mx-auto text-center product-listing">
