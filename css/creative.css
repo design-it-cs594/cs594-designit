@@ -500,7 +500,21 @@ header.masthead p {
   transition: all .2s ease;
 }
 
-.product-listing {
-  height: 100%;
+.picture-listing {
+  height: 220px;
   width: 100%;
+}
+
+.product-listing {
+  background-color: #ffffff;
+  height: 225px;
+  border-radius: 25px;
+  /*border-style: dotted;*/
+  box-shadow: 5px 10px #888888;
+}
+
+.center-text-class {
+  padding: 58px 0;
+  /*border: 3px solid green;*/
+  text-align: center;
 }
