@@ -126,16 +126,17 @@ function recommendation(){
   alert("in recommendation");
   var jqxhr = $.getJSON( "sofa.json", function(data) {
         console.log( "success" );
-         // var html = '';
+         var html = '';
+         var i = 0;
         $.each(data, function(key, value){
-          console.log(value);
-            // html += '<div class="dcell">';
-            // html += '<img src="images/'+value.product+'.png"/>';
-            // html += '<label for="'+value.product+'">'+value.name+':</label>';
+            html += '<div class="dcell">';
+            html += '<img src='+value[i].Image+'/>';
+            html += '<label for="'+value[i].Image+'">'+value[i].Price+':</label>';
             // html += '<input type="text" id="'+value.product+'" name="'+value.product+'" value="0" stock="'+value.stock+'" price="'+value.price+'" required>';
-            // html += '</div>';
+            html += '</div>';
+            i = i + 1;
         });
-    // $('#yourContainerId').html(html);
+    $('#yourContainerId').html(html);
     
       //   for(let i = 0; i < data.length; i++){
       //     console.log( data[i].ProductLink );
