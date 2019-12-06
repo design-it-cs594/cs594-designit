@@ -1,5 +1,5 @@
 <?php
 	$arr['id'] = "1";
 
-	echo $arr;
+	echo json_encode($arr);
 ?>

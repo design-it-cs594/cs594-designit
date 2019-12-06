@@ -130,8 +130,8 @@ function recommendation(){
     // dataType: "json",
     url: "recommendation_engine.php",
     success: function(data){
-      alert("kfdvbkh")
-      console.log(data)
+      // alert("kfdvbkh")
+      console.log(data.id)
     },
       error: function (jqXHR, textStatus, errorThrown) {
           console.log(errorThrown);
