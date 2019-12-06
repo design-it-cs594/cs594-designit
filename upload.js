@@ -151,8 +151,10 @@ function recommendation(){
 
     $.getJSON('sofa.json', function(data) {
         //do stuff with your data here
-        console.log(data.length)
-        alert(data[0])
+        console.log(typeof data.length) 
+        console.log(typeof data)
+
+        // alert(data[0])
         // var mydata = JSON.parse(data);
         // alert(mydata.length);
         // for(var i = 0;i < data.length; i++)
