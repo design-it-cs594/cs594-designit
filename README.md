@@ -20,7 +20,7 @@ Our Project is to build an AI system that helps you to choose optimal furniture 
 
 How it Works:
 	
-	![logo1](https://github.com/design-it-cs594/cs594-designit/tree/master/img/how-it-works.jpg "How it Works")
+	![logo1](https://github.com/design-it-cs594/cs594-designit/tree/master/img/how-it-works.jpg)
 
 1.	User uploads image and tells his/her preferences.
 2.	We understand the image and consider the preferences and give intelligent suggestions.
@@ -28,7 +28,7 @@ How it Works:
 
 ### Architecture:
 
-	![logo2](https://github.com/design-it-cs594/cs594-designit/tree/master/img/architecture.jpg "Architecture")
+	![logo2](https://github.com/design-it-cs594/cs594-designit/tree/master/img/architecture.jpg)
 
 1.	The User will Upload the Image on the Website Hosted in GitHub Pages.
 2.	The Uploaded image will be stored in IBM Cloudant via a REST API Call.
