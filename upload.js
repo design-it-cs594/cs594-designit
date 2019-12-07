@@ -12,6 +12,7 @@ const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordClouda
 const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
 
 
+
 function uploadImage() {
   var image = selectImage.files[0];
   // name is .name, type is .type
