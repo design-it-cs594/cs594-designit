@@ -1,0 +1,1 @@
+Add the ibm watson apikey, instance id and url in loadAndDeploy corresponding to ibm account.
