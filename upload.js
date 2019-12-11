@@ -43,6 +43,7 @@ function loadImageToBrowser(doc, imageToLoad) {
   var imageHolder = document.createElement('div');
   imageSection.className = "imageSection"
   imageHolder.className = "imageHolder"
+  imageHolder.setAttribute('style', "display:inline;");
   fileReader.readAsDataURL(imageToLoad);
   fileReader.onload = function (readerEvent) {
     image.src = readerEvent.target.result
