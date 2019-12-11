@@ -143,7 +143,7 @@ function recommendation(){
           <div class="col-md-6 col-0-gutter .mid-row .mid-col">
             <div class="ot-portfolio-item ">
               <figure class="effect-bubba">
-                <img src=`+value[i].Image+` alt="img02" class="img-responsive"/>
+                <img src=`+value[i].Image+` alt="img02" class="img-responsive" height="40"></img>
                 <figcaption>
                   <h2>`+value[i].Brand+`</h2>
                   <p> Brought to you by `+value[i].Seller+`</p>
