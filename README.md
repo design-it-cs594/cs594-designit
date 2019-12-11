@@ -19,7 +19,6 @@ __GitHub Repo:__ https://github.com/design-it-cs594/cs594-designit
 Our Project is to build an AI system that helps you to choose optimal furniture for your home or workplace. Depending upon the user’s preference and Room Aesthetics, we have developed a system to understand the room features, user’s preference and provide intelligent suggestions to buy furniture online.
 
 How it Works:
-	
 	![logo1](https://github.com/design-it-cs594/cs594-designit/tree/master/img/how-it-works.jpg)
 
 1.	User uploads image and tells his/her preferences.
@@ -28,7 +27,7 @@ How it Works:
 
 ### Architecture:
 
-	![logo2](https://github.com/design-it-cs594/cs594-designit/tree/master/img/architecture.jpg)
+![logo2](https://github.com/design-it-cs594/cs594-designit/tree/master/img/architecture.jpg)
 
 1.	The User will Upload the Image on the Website Hosted in GitHub Pages.
 2.	The Uploaded image will be stored in IBM Cloudant via a REST API Call.
