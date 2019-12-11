@@ -139,7 +139,7 @@ function recommendation(){
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row" id="suggestions-class">
-          <div class="col-lg-3 mx-auto text-center product-listing">
+          <div class="col-lg-4 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -156,7 +156,7 @@ function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-3 mx-auto text-center product-listing">
+          <div class="col-lg-4 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -173,7 +173,7 @@ function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-3 mx-auto text-center product-listing">
+          <div class="col-lg-4 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
