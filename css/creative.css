@@ -73,15 +73,6 @@ h6 {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.imageHolder {
-  text-align: center;
-  display: inline;
-
-}
-.what-we-do {
-  padding: 4rem 0;
-  height: 100%;
-}
 
 .section-heading {
   margin-top: 0;
@@ -629,4 +620,14 @@ figure.effect-bubba:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
+}
+
+.imageHolder {
+  text-align: center;
+  display: inline;
+
+}
+.what-we-do, .show-us-your-room {
+  padding: 4rem 0;
+  height: 100%;
 }
