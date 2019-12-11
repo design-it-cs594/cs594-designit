@@ -200,7 +200,7 @@ form.onsubmit = function() {
     //     alert("retrieved")
     //   }
     // });
-  recommendation()
+  // recommendation()
 
   return false;
 }
