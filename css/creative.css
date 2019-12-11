@@ -538,8 +538,8 @@ header.masthead p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
 }
 
 figure.effect-bubba {
@@ -630,4 +630,14 @@ figure.effect-bubba:hover p {
 .what-we-do, .show-us-your-room {
   padding: 4rem 0;
   height: 100%;
+}
+
+.row-0-gutter {
+    margin-left: -13px;
+    margin-right: -13px;
+}
+
+.col-0-gutter {
+  padding-left: 0;
+  padding-right: 0;
 }
