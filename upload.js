@@ -140,10 +140,10 @@ function recommendation(){
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row row-0-gutter">
-          <div class="col-md-6 col-0-gutter .mid-row .mid-col">
+          <div class="col-lg-6 col-0-gutter .mid-row .mid-col">
             <div class="ot-portfolio-item ">
               <figure class="effect-bubba">
-                <img src=`+value[i].Image+` alt="img02" class="img-responsive" height="40"></img>
+                <img src=`+value[i].Image+` alt="img02" class="img-responsive"></img>
                 <figcaption>
                   <h2>`+value[i].Brand+`</h2>
                   <p> Brought to you by `+value[i].Seller+`</p>
@@ -153,7 +153,7 @@ function recommendation(){
             </div>
           </div>
           <br />
-          <div class="col-md-6 col-0-gutter">
+          <div class="col-lg-6 col-0-gutter">
             <div class="ot-portfolio-item .mid-row .mid-col">
               <figure class="effect-bubba">
                 <img src=`+value[i+1].Image+` alt="img02" class="img-responsive" />
