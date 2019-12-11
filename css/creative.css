@@ -585,27 +585,27 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-    color: #fff;
+    color: #000;
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
-  padding-top: 30%;
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(0,-20px,0);
-  transform: translate3d(0,-20px,0);
+    padding-top: 30%;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0,-20px,0);
+    transform: translate3d(0,-20px,0);
 }
 
 figure.effect-bubba p {
-    color: #fff;
+    color: #000;
     font-size: 13px;
     font-weight: 500;
-  padding: 20px 2.5em;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(0,20px,0);
-  transform: translate3d(0,20px,0);
+    padding: 20px 2.5em;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0,40px,0);
+    transform: translate3d(0,20px,0);
 }
 
 figure.effect-bubba:hover figcaption::before,
