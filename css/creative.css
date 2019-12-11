@@ -76,7 +76,7 @@ h6 {
 .imageHolder {
   text-align: center;
   display: inline;
-  
+
 }
 section {
   padding: 4rem 0;
@@ -508,7 +508,7 @@ header.masthead p {
 
 .picture-listing {
   height: 220px;
-  width: 100%;
+  width: 75%;
 }
 
 .product-listing {
