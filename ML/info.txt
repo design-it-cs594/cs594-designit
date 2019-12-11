@@ -1,0 +1,2 @@
+Add the ibm watson apikey, instance id and url in loadAndDeploy corresponding to ibm account.
+Also, I haven't uploaded trained weights for loading the model as they were more than 450mb. You can train you own model on ade20k dataset (which this model was trained on).
