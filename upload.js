@@ -195,7 +195,7 @@ function recommendation(){
             </a>
           </div>
         </div> <br />`
-        i = i+1
+        i = i+2
         container.innerHTML += markup
 
 
