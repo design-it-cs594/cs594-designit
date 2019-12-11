@@ -139,22 +139,17 @@ function recommendation(){
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row" id="suggestions-class">
-          <div class="col-lg-4  product-listing">
-            <a href="http://google.com">
-              <div class="row">
-                <div class="col-lg-8">
-                  <img class="picture-listing" src=`+value[i].Image+`alt="Smiley face">
-                </div>
-                <div class="col-lg-4 text-center">
-                  <div class="center-text-class">
-                    <p>`+value[i].Brand+`</p> 
-                    <p>`+value[i].Seller+`</p>
-                  </div>
-                </div>
-
-
-              </div>
-            </a>
+          <div class="col-md-6 col-0-gutter">
+            <div class="ot-portfolio-item">
+              <figure class="effect-bubba">
+                <img src=`+value[i].Image+` alt="img02" class="img-responsive" />
+                <figcaption>
+                  <h2>`+value[i+1].Brand+`</h2>
+                  <p> Brought to you by `+value[i+1].Seller+`</p>
+                  <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                </figcaption>
+              </figure>
+            </div>
           </div>
           <div class="col-lg-4 mx-auto product-listing">
             <a href="http://google.com">
