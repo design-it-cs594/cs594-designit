@@ -138,7 +138,7 @@ function recommendation(){
          }
          for(let i = 0; i < value.length; i++){
             // alert(i)
-            let markup = `<div class="row" id="suggestions-class">
+            let markup = `<div class="row">
           <div class="col-md-6 col-0-gutter">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba">
