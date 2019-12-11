@@ -508,7 +508,7 @@ header.masthead p {
 .product-listing {
   background-color: #ffffff;
   height: 225px;
-  border-radius: 25px;
+  border-radius: 15px;
   /*border-style: dotted;*/
   box-shadow: 5px 10px #888888;
 }
