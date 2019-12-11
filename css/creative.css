@@ -75,6 +75,8 @@ h6 {
 
 .imageHolder {
   text-align: center;
+  display: inline;
+  
 }
 section {
   padding: 4rem 0;
