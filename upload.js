@@ -152,6 +152,7 @@ function recommendation(){
               </figure>
             </div>
           </div>
+          <br />
           <div class="col-md-6 col-0-gutter">
             <div class="ot-portfolio-item .mid-row .mid-col">
               <figure class="effect-bubba">
