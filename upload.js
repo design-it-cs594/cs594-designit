@@ -133,17 +133,13 @@ function recommendation(){
          let markup = ``
          let container = document.getElementById("suggestions-class")
          // alert("Created container")
-         if (value.length%3==1){
-          value.pop();
-         }
-         elif (value.length%3==2){
-          value.pop();
+         if (value.length%2==1){
           value.pop();
          }
          for(let i = 0; i < value.length; i++){
             // alert(i)
             let markup = `<div class="row" id="suggestions-class">
-          <div class="col-lg-3 mx-auto text-center product-listing">
+          <div class="col-lg-5 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -160,7 +156,7 @@ function recommendation(){
               </div>
             </a>
           </div>
-          <div class="col-lg-3 mx-auto text-center product-listing">
+          <div class="col-lg-5 mx-auto text-center product-listing">
             <a href="http://google.com">
               <div class="row">
                 <div class="col-lg-8">
@@ -170,23 +166,6 @@ function recommendation(){
                   <div class="center-text-class">
                     <p>`+value[i+1].Brand+`</p> 
                     <p>`+value[i+1].Seller+`</p>
-                  </div>
-                </div>
-
-
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-3 mx-auto text-center product-listing">
-            <a href="http://google.com">
-              <div class="row">
-                <div class="col-lg-8">
-                  <img class="picture-listing" src=`+value[i+2].Image+`alt="Smiley face">
-                </div>
-                <div class="col-lg-4 text-center">
-                  <div class="center-text-class">
-                    <p>`+value[i+2].Brand+`</p> 
-                    <p>`+value[i+2].Seller+`</p>
                   </div>
                 </div>
 
