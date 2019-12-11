@@ -571,15 +571,15 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba figcaption::before {
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  /*border-top: 1px solid #fff;*/
+  /*border-bottom: 1px solid #fff;*/
   -webkit-transform: scale(0,1);
   transform: scale(0,1);
 }
 
 figure.effect-bubba figcaption::after {
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
+  /*border-right: 1px solid #fff;*/
+  /*border-left: 1px solid #fff;*/
   -webkit-transform: scale(1,0);
   transform: scale(1,0);
 }
