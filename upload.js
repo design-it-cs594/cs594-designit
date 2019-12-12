@@ -152,7 +152,7 @@ function recommendation(){
             // alert(i)
             let markup = `<div class="row text-center row-0-gutter">
           <div class="col-lg-6 ">
-          <a href="`+value[i+1].ProductLink+`" target="_blank">
+          <a href="`+value[i].ProductLink+`" target="_blank">
             <div class="ot-portfolio-item ">
               <figure class="effect-bubba">
                 <img src=`+value[i].Image+` alt="img02" class="img-responsive" style="width: 100%; height: "></img>
