@@ -164,8 +164,9 @@ function recommendation(){
             </div>
           </div>
           <br />
-          <a href="`+value[i+1].ProductLink+`">
+          
           <div class="col-lg-6 ">
+          <a href="`+value[i+1].ProductLink+`">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba" style="border-radius: 30px;">
                 <img src=`+value[i+1].Image+` alt="img02" class="img-responsive" style="width: 100%;"/>
