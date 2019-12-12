@@ -662,17 +662,22 @@ figure.effect-bubba:hover p {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  overflow: hidden; /* Enable scroll if needed */
   background-color: #474e5d;
-  padding-top: 50px;
+  padding-top: 25px;
+
 }
 
+.m/*odal-body{
+  overflow:auto;
+}*/
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: auto auto 5% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 70%; /* Could be more or less, depending on screen size */
+  height: 50%;   /*50% */
 }
 
 .close {
@@ -695,5 +700,10 @@ figure.effect-bubba:hover p {
   content: "";
   clear: both;
   display: table;
+}
+
+.form-outline {
+  width: 900px;
+  font-size: 15px;
 }
 
