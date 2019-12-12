@@ -185,11 +185,12 @@
     
     <!-- Design -->
     <div id="design" class="modal">
-      <span onclick="document.getElementById('design').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
           <!-- <div class="col-lg-8 mx-auto text-center"> -->
             <h2 class="section-heading text-center text-dark">Innovate your room</h2>
             <hr class="dark my-4">
             <div class="container-fluid">
+              <span onclick="document.getElementById('design').style.display='none'" class="close" title="Close Modal">&times;</span>
         <div class="row no-gutters user-content">
                         <div class="col-6 padding col-centered">
 
@@ -239,7 +240,10 @@
                                           <!-- <br> -->
                                         <div class="container">
                                           <div class="row">
-                                            <div class="col text-center">
+                                            <div class="col-lg-6">
+                                              <button type="button" onclick="document.getElementById('design').style.display='none'" class="cancelbtn btn btn-primary" style="float: right;">Cancel</button>
+                                            </div>
+                                            <div class="col-lg-6">
                                               <button type="submit" class="btn btn-primary">Submit</button>
                                             </div>
                                           </div>
