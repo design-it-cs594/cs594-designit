@@ -155,6 +155,10 @@ img::-moz-selection {
     border-color: transparent;
     background-color: transparent;
   }
+
+  .container {
+  max-width: 1400px;
+  }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
