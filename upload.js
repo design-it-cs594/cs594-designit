@@ -158,7 +158,7 @@ function recommendation(){
                 <figcaption>
                   <h2>`+value[i].Brand+`</h2>
                   <p> Brought to you by `+value[i].Seller+`</p>
-                  <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                  <a href="`+value[i].ProductLink+`" data-toggle="modal" data-target="#Modal-2">View more</a>
                 </figcaption>
               </figure>
             </div>
@@ -171,7 +171,7 @@ function recommendation(){
                 <figcaption>
                   <h2>`+value[i+1].Brand+`</h2>
                   <p> Brought to you by `+value[i+1].Seller+`</p>
-                  <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                  <a href="`+value[i+1].ProductLink+`" data-toggle="modal" data-target="#Modal-2">View more</a>
                 </figcaption>
               </figure>
             </div>
