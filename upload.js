@@ -12,6 +12,15 @@ const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordClouda
 const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
 
 
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 
 function uploadImage() {
   var image = selectImage.files[0];
