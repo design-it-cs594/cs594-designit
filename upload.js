@@ -164,18 +164,20 @@ function recommendation(){
             </div>
           </div>
           <br />
+          <a href="`+value[i+1].ProductLink+`">
           <div class="col-lg-6 ">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba" style="border-radius: 30px;">
                 <img src=`+value[i+1].Image+` alt="img02" class="img-responsive" style="width: 100%;"/>
+                
                 <figcaption>
                   <h2>`+value[i+1].Brand+`</h2>
                   <p> Brought to you by `+value[i+1].Seller+`</p>
-                  <a href="`+value[i+1].ProductLink+`" data-toggle="modal" data-target="#Modal-2">View more</a>
                 </figcaption>
               </figure>
             </div>
           </div>
+          </a>
         </div> <br />`
         i = i+1
         container.innerHTML += markup
