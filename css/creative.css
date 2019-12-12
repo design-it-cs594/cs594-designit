@@ -131,6 +131,7 @@ img::-moz-selection {
   font-weight: 700;
   text-transform: uppercase;
   color: #212529;
+
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
@@ -705,3 +706,11 @@ figure.effect-bubba:hover p {
   font-size: 15px;
 }
 
+ul.dropdown-lr {
+  width: 400px;
+}
+
+.forgot-password {
+  align-self: right;
+  text-align: right;
+}
