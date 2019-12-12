@@ -152,21 +152,22 @@ function recommendation(){
             // alert(i)
             let markup = `<div class="row text-center row-0-gutter">
           <div class="col-lg-6 ">
+          <a href="`+value[i+1].ProductLink+`" target="_blank">
             <div class="ot-portfolio-item ">
               <figure class="effect-bubba">
                 <img src=`+value[i].Image+` alt="img02" class="img-responsive" style="width: 100%; height: "></img>
                 <figcaption>
                   <h2>`+value[i].Brand+`</h2>
                   <p> Brought to you by `+value[i].Seller+`</p>
-                  <a href="`+value[i].ProductLink+`" data-toggle="modal" data-target="#Modal-2">View more</a>
                 </figcaption>
               </figure>
             </div>
+            </a>
           </div>
           <br />
           
           <div class="col-lg-6 ">
-          <a href="`+value[i+1].ProductLink+`">
+          <a href="`+value[i+1].ProductLink+`" target="_blank">
             <div class="ot-portfolio-item">
               <figure class="effect-bubba" style="border-radius: 30px;">
                 <img src=`+value[i+1].Image+` alt="img02" class="img-responsive" style="width: 100%;"/>
