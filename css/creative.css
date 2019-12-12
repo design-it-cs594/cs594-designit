@@ -630,7 +630,7 @@ figure.effect-bubba:hover p {
 }
 .what-we-do, .show-us-your-room {
   padding: 4rem 0;
-  height: 100%;
+  /*height: 100%;*/
 }
 
 .row-0-gutter {
