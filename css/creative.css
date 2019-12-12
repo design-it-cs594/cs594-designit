@@ -586,7 +586,7 @@ figure.effect-bubba figcaption::after {
 }
 
 figure.effect-bubba h2 {
-    color: #fff;
+    color: #;000
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
@@ -598,7 +598,7 @@ figure.effect-bubba h2 {
 }
 
 figure.effect-bubba p {
-    color: #fff;
+    color: #000;
     font-size: 13px;
     font-weight: 500;
     padding: 20px 2.5em;
