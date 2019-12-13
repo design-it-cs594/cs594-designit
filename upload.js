@@ -301,11 +301,9 @@ function recommendation1(){
 //     return false;
 // }
 
-document.getElementById('prefSubmit').onclick = function() {
-    // form.target = '_blank';
-    // form.submit();
-    recommendation1();
-}
+// document.getElementById('prefSubmit').onclick = function() {
+//     recommendation1();
+// }
 
 // form.onsubmit = function() {
   document.getElementById('uploadImage').onclick = function() {
