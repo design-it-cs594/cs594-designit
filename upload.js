@@ -27,7 +27,7 @@ const CVData = {
       type: 'GET',
       url: `${cvURL}/furniture/cv`,
       dataType: 'json',
-      // contentType: "application/json"
+      contentType: "application/json"
     });
   }
 }
