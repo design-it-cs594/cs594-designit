@@ -23,18 +23,12 @@ const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
 
 const CVData = {
   get() {
-    // return $.ajax({
-    //   type: 'GET',
-    //   url: `${cvURL}/furniture/cv`,
-    //   dataType: 'json',
-    //   contentType: "application/json"
-    // });
-
-    console.log("In CVData get")
-    CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
-    console.log(editPreferences);
-    editPreferences.classList.remove("d-none");
-    editPreferences.classList.add("d-block");
+    return $.ajax({
+      type: 'GET',
+      url: `${cvURL}/furniture/cv`,
+      dataType: 'json',
+      // contentType: "application/json"
+    });
   }
 }
 var modal = document.getElementById('id01');
@@ -153,6 +147,12 @@ function getCVComponent() {
       return;
     }
 
+     console.log("In CVData get")
+    CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
+    console.log(editPreferences);
+    editPreferences.classList.remove("d-none");
+    editPreferences.classList.add("d-block");
+    
     console.log(result);
   });
   alert("after CVData get....")
