@@ -150,10 +150,10 @@ function getCVComponent() {
     }
 
      console.log("In CVData get")
-    CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
-    console.log(editPreferences);
-    editPreferences.classList.remove("d-none");
-    editPreferences.classList.add("d-block");
+    // CVtext.innerHTML += "<p>The CV component detected"+array1.toString()+"</p>"
+    // console.log(editPreferences);
+    // editPreferences.classList.remove("d-none");
+    // editPreferences.classList.add("d-block");
 
     console.log(result);
   });
@@ -194,6 +194,10 @@ function displayTags(data, dom) {
   // tags.className = "imageLabels";
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
+  CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+" of dimensions: "+data.dimensions.toString()+" (inches) !.</p>"
+    console.log(editPreferences);
+    editPreferences.classList.remove("d-none");
+    editPreferences.classList.add("d-block");
   // for (var index in data.watsonResults[0].classes) {
   //   var tag = document.createElement('div');
   //   tag.className = "imageLabel";
