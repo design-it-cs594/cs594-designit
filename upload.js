@@ -19,7 +19,8 @@ let passwordCloudant = "a98e26011f29480df796b247c94790debd4ea40c5138e6dec34bec83
 const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordCloudant + "@" + usernameCloudant + ".cloudant.com");
 
 const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
-const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
+// const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
+const cvURL = 'https://9882c7ff.us-south.apigw.appdomain.cloud/furniture';
 
 const CVData = {
   get() {
