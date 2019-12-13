@@ -19,7 +19,6 @@ let passwordCloudant = "a98e26011f29480df796b247c94790debd4ea40c5138e6dec34bec83
 const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordCloudant + "@" + usernameCloudant + ".cloudant.com");
 
 const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
-// const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
 const cvURL = 'https://9882c7ff.us-south.apigw.appdomain.cloud/furniture';
 
 const CVData = {
@@ -62,7 +61,6 @@ function uploadImage() {
     cloudantDocument._attachments.image = attachment
     console.log(cloudantDocument);
     loadImageToBrowser(cloudantDocument, selectImage.files[0]);
-    // uploadToCloudant(cloudantDocument);
   }
 }
 
@@ -81,7 +79,6 @@ function loadImageToBrowser(doc, imageToLoad) {
   var imageHolder = document.createElement('div');
   imageSection.className = "imageSection"
   imageHolder.className = "imageHolder"
-  // imageHolder.setAttribute('style', "display:inline;");
   fileReader.readAsDataURL(imageToLoad);
   fileReader.onload = function (readerEvent) {
     image.src = readerEvent.target.result;
@@ -109,25 +106,14 @@ function uploadToCloudant(doc) {
       contentType: 'application/json',
       success: function (data) {
 
-        // alert("Uploaded the Image Successfully to Cloudant");
-
-    //     var imageSection = document.createElement('div');
-    //     var imageHolder = document.createElement('p');
-    //     imageSection.className = "detectedCVDiv";
-    //     imageHolder.className = "detectedCVP";
-    //     src = "The CV component detected Sofa, Table, Chair, Table lamp";
-    //     // image.className = "CVdetectedText";
-    //     imageHolder.appendChild(src);
-    //     imageSection.appendChild(imageHolder);
-    // CVtext.prepend(imageSection);
-        console.log(data)
+    
+        alert("CV component detecting objects and its dimensions!");
+        uploadText.innerHTML += "<p>The CV component is detecting objects and its dimensions!</p>";
         // get tags from cloudant
-        // add 1.5s delay to give time for serverless function to execute
+        // add 15 s delay to give time for serverless function to execute
         setTimeout(function () {
-          alert("getCVComponent ....")
-          // getCVComponent();
           getDocumentWithId(data.id, doc, 0);
-        }, 30000);
+        }, 15000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -140,7 +126,6 @@ function uploadToCloudant(doc) {
 
 function getCVComponent() {
   // body...
-  alert("before CVData get....")
 
   CVData.get().done(function (result) {
     // body...
@@ -149,16 +134,8 @@ function getCVComponent() {
       return;
     }
 
-     console.log("In CVData get")
-    // CVtext.innerHTML += "<p>The CV component detected"+array1.toString()+"</p>"
-    // console.log(editPreferences);
-    // editPreferences.classList.remove("d-none");
-    // editPreferences.classList.add("d-block");
-
     console.log(result);
   });
-  alert("after CVData get....")
-
 }
 function getDocumentWithId(id, dom, tries) {
   $.ajax({
@@ -189,22 +166,16 @@ function getDocumentWithId(id, dom, tries) {
 }
 
 function displayTags(data, dom) {
-  // dom.id = data._id;
-  // var tags = document.createElement('div');
-  // tags.className = "imageLabels";
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
-  CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+" of dimensions: "+data.dimensions.toString()+" (inches) !.</p>"
+  CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+"!.</p>";
+
+   // of dimensions: "+data.dimensions.toString()+" (inches) 
     console.log(editPreferences);
     editPreferences.classList.remove("d-none");
     editPreferences.classList.add("d-block");
-  // for (var index in data.watsonResults[0].classes) {
-  //   var tag = document.createElement('div');
-  //   tag.className = "imageLabel";
-  //   tag.innerHTML = data.watsonResults[0].classes[index].class
-//     tags.appendChild(tag);
-//   }
-//   dom.appendChild(tags)
+
+    recommendation();
 }
 
 function recommendation(){
@@ -279,15 +250,5 @@ form.onsubmit = function() {
   // Showing all d-none classes
 
   uploadImage()
-
-    // $.ajax({
-    //   type: 'GET',
-    //   url: `${apiUrl}/entries`,
-    //   dataType: 'json',
-    //   success: function(data){
-    //     alert("retrieved")
-    //   }
-    // });
-recommendation();
   return false;
 }
