@@ -110,10 +110,10 @@ function uploadToCloudant(doc) {
         alert("CV component detecting objects and its dimensions!");
         uploadText.innerHTML += "<p>The CV component is detecting objects and its dimensions!</p>";
         // get tags from cloudant
-        // add 15 s delay to give time for serverless function to execute
+        // add 20 s delay to give time for serverless function to execute
         setTimeout(function () {
           getDocumentWithId(data.id, doc, 0);
-        }, 15000);
+        }, 20000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -170,7 +170,7 @@ function displayTags(data, dom) {
   console.log(data.dimensions)
   CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+"!.</p>";
 
-data.dimension.forEach((v, i) => {
+data.dimensions.forEach((v, i) => {
     var td = document.createElement('td');
     
     if (!(i % 4)) {
