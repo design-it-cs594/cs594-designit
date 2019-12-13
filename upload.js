@@ -126,8 +126,8 @@ function uploadToCloudant(doc) {
         setTimeout(function () {
           alert("getCVComponent ....")
           // getCVComponent();
-          // getDocumentWithId(data.id, doc, 0);
-        }, 35000);
+          getDocumentWithId(data.id, doc, 0);
+        }, 5000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -168,7 +168,8 @@ function getDocumentWithId(id, dom, tries) {
         "Authorization": "Basic " + btoa(cloudantURL.username + ":" + cloudantURL.password)
       },
       success: function (data) {
-        displayTags(data, dom)
+        console.log(data)
+        // displayTags(data, dom)
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log(errorThrown);
