@@ -19,12 +19,23 @@ const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
 
 const CVData = {
   get() {
-    return $.ajax({
-      type: 'GET',
-      url: `${cvURL}/furniture/cv`,
-      dataType: 'json',
-      contentType: "application/json"
-    });
+    // return $.ajax({
+    //   type: 'GET',
+    //   url: `${cvURL}/furniture/cv`,
+    //   dataType: 'json',
+    //   contentType: "application/json"
+    // });
+    var request = require("request");
+
+    var options = { method: 'GET',
+    url: 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture/furniture/cv',
+    headers: { accept: 'application/json' } };
+
+    request(options, function (error, response, body) {
+       if (error) return console.error('Failed: %s', error.message);
+
+      console.log('Success: ', body);
+      });
   }
 }
 var modal = document.getElementById('id01');
