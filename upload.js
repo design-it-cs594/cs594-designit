@@ -8,6 +8,7 @@ let tagsDatabase = "tags"
 let uploadedImages = document.getElementById("uploadedImages");
 let uploadText = document.getElementById("uploadText");
 let CVtext = document.getElementById("CVtext");
+let detectText = document.getElementById("detectText");
 
 let editPreferences = document.getElementById("editPreferences");
 let suggestionsSection = document.getElementById("suggestionsSection");
@@ -94,8 +95,11 @@ function uploadToCloudant(doc) {
       contentType: 'application/json',
       success: function (data) {
 
-    
-        alert("CV component detecting objects and its dimensions!");
+      console.log(detectText);
+      detectText.classList.remove("d-none");
+
+     detectText.classList.add("d-block");
+        // alert("CV component detecting objects and its dimensions!");
         // uploadText.innerHTML += "<p>The CV component is detecting objects and its dimensions!</p>";
         // get tags from cloudant
         // add 20 s delay to give time for serverless function to execute
@@ -141,6 +145,11 @@ function getDocumentWithId(id, dom, tries) {
 }
 
 function displayTags(data, dom) {
+  console.log(detectText);
+  detectText.classList.remove("d-block");
+
+  detectText.classList.add("d-none");
+
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
   CVtext.innerHTML += "<p>The CV component detected <h3>"+data.detectedFurniture.toString()+"<h3></p>";
