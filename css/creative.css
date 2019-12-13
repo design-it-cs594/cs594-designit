@@ -718,3 +718,31 @@ ul.dropdown-lr {
   align-self: right;
   text-align: right;
 }
+
+
+/* Changes starts here*/
+
+.img-prop{
+  border-radius: 3%;
+  border: 5px solid #0b0a0a;
+}
+.text-information{
+  font-size:1rem;
+}
+.btn{
+  border-radius: 0px !important;
+}
+.btn-primary{
+  background-color: #080809 !important;
+}
+.browse-border{
+  border: 1px solid #8080804a;
+  padding: 0.3rem;
+}
+#contact{
+  background: #e3eae352;
+}
+.uploadedImage{
+  height: 50%
+  width: 50%;
+}

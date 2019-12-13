@@ -196,46 +196,40 @@
           <hr class="dark my-4">
           <div class="row">
               
-              <div class="col-lg-6 mx-auto ">
+              <div class="col-lg-4 mx-auto ">
                 
                   <div id="image" style="display:inline;">
-                      <img src="img/about/space.jpeg" height="350" width="400">
+                      <img class = "img-prop" src="img/about/space.jpeg" height="350" width="400">
                   </div>
               </div>
               
-              <div class="col-lg-6 mx-auto  textdiv" style="text-align:center;display: block;">
-                    <!-- <div id="text-dark-faded mb-4 text-center" style="horizontal-align: middle;;">  -->
-                        We are an artifical intelligence based design company that helps you chose optimal furniture for your home or workplace.
-                    <!-- </div> -->
+              <div class="col-lg-8 mx-auto my-5">
+                       <p class="text-information"> Design.IT is an artificial intelligence based interior design platform that helps you in to choose furnitures for your home or workplace based on your place’s aesthetics(dimensions and existing objects) and your desired preferences (color, type, price).</p>
+                       <p class="text-information">This platform helps young generation who move a lot from places to places and find furniture buying a hassle. It it important to understand economic requirements of these people and the time they invest in measuring and buying furniture. </p>                 
               </div>
-
             <p class="text-dark-faded mb-4">  <br></p>
             
           </div>
         </div>
       </section>
 
-    <section class="show-us-your-room" id="about">
-
-
-
+    <section class="my-3" id="about">
         <div class="container">
-            <h2 class="section-heading text-dark text-center">Show us your room</h2>
+            <h2 class="font-weight-bold text-dark text-center">Show us your Room</h2>
             <hr class="dark my-4">
             <div class="row">
-              
                 <div class="col-12 padding">
-					<div class="uploadSection text-center">
+				              	<div class="uploadSection text-center">
                         <form class="uploadForm" method="post" name="upload" enctype="multipart/form-data" action="">
-                            <input class="selectImage" id="selectImage" type="file" name="myImage" accept="image/*" />
+                            <input class="selectImage browse-border" id="selectImage" type="file" name="myImage" accept="image/*" />
                             <input class="uploadImage btn btn-primary" id="uploadImage" type="submit" value="Upload" />
                         </form>
-                    </div>
+                        </div>
                 </div>
             </div>
             <br />
             <br />
-            <div class="row mx-auto">
+            <div id="uploadText" class="row d-none mx-auto">
             	
                 <div class=" col-12 padding  text-center" >
                   <p>The uploaded image appears here</p>
@@ -243,7 +237,7 @@
                 </div>
             </div>
             <p class="text-dark-faded mb-4">  <br></p>
-            <div class="row">
+            <div class="row d-none">
               <div class="col text-center">
                 <input class="givePreferences btn btn-primary" onclick='document.getElementById("design").style.display="block"' style="width:auto;" id="givePreferences" type="submit" value="Edit Preferences" />
               </div>
@@ -263,7 +257,7 @@
             <hr class="dark my-4">
             <div class="container-fluid">
               <span onclick="document.getElementById('design').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <div class="row no-gutters user-content">
+        <div class="row  no-gutters user-content">
                         <div class="col-6 padding col-centered">
 
                             <div class="container-bg form-outline">
@@ -336,7 +330,7 @@
 
 
           
-    <section class="bg-light" id="shop">
+    <section class="bg-light d-none" id="shop">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
@@ -358,7 +352,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-              <h2 class="section-heading">Contact</h2>
+              <h2 class="section-heading pt-2">Contact</h2>
               <hr class="my-4">
             </div>
           </div>
