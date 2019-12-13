@@ -23,7 +23,7 @@ const CVData = {
       type: 'GET',
       url: `${cvURL}/furniture/cv`,
       dataType: 'json',
-    })
+    });
   }
 }
 var modal = document.getElementById('id01');
@@ -116,15 +116,19 @@ function uploadToCloudant(doc) {
 
 function getCVComponent() {
   // body...
+  alert("before CVData get....")
+
   CVData.get().done(function (result) {
     // body...
-              alert("CVData ....")
+    alert("CVData ....")
     if (!result) {
       return;
     }
 
     console.log(result);
-  })
+  });
+  alert("after CVData get....")
+
 }
 function getDocumentWithId(id, dom, tries) {
   $.ajax({
