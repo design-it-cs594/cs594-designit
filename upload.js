@@ -70,8 +70,8 @@ function loadImageToBrowser(doc, imageToLoad) {
   fileReader.readAsDataURL(imageToLoad);
   fileReader.onload = function (readerEvent) {
     image.src = readerEvent.target.result
-    // image.style.height = '80%'
-    // image.style.width = '80%'
+    image.style.height = '50%'
+    image.style.width = '50%'
     image.className = "uploadedImage";
     imageHolder.appendChild(image);
     imageSection.appendChild(imageHolder);
