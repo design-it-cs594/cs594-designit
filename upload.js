@@ -170,6 +170,16 @@ function displayTags(data, dom) {
   console.log(data.dimensions)
   CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+"!.</p>";
 
+data.dimension.forEach((v, i) => {
+    var td = document.createElement('td');
+    
+    if (!(i % 4)) {
+        tr = document.createElement('tr');
+        document.getElementById('table0').appendChild(tr);
+    }
+    td.appendChild(document.createTextNode(v));
+    tr.appendChild(td);
+});
    // of dimensions: "+data.dimensions.toString()+" (inches) 
     console.log(editPreferences);
     editPreferences.classList.remove("d-none");
