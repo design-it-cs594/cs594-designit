@@ -143,7 +143,7 @@ function getDocumentWithId(id, dom, tries) {
 function displayTags(data, dom) {
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
-  CVtext.innerHTML += "<p>The CV component detected <h3>"+data.detectedFurniture.toString()+"<h3>!.</p>";
+  CVtext.innerHTML += "<p>The CV component detected <h3>"+data.detectedFurniture.toString()+"<h3></p>";
 
 // data.dimensions.forEach((v, i) => {
 //     var td = document.createElement('td');
