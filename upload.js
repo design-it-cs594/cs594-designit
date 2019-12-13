@@ -143,7 +143,7 @@ function getDocumentWithId(id, dom, tries) {
 function displayTags(data, dom) {
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
-  CVtext.innerHTML += "<h3>The CV component detected "+data.detectedFurniture.toString()+"!.</h3>";
+  CVtext.innerHTML += "<p>The CV component detected <h3>"+data.detectedFurniture.toString()+"<h3>!.</p>";
 
 // data.dimensions.forEach((v, i) => {
 //     var td = document.createElement('td');
@@ -298,8 +298,8 @@ document.getElementById('prefSubmit').onclick = function() {
     recommendation1();
 }
 
-form.onsubmit = function() {
-  
+// form.onsubmit = function() {
+  document.getElementById('uploadImage').onclick = function() {
   // Showing all d-none classes
 
   uploadImage()
