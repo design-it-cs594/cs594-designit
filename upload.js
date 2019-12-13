@@ -204,7 +204,7 @@ function recommendation(){
   suggestionsSection.classList.remove("d-none");
   suggestionsSection.classList.add("d-block");
   
-  var jqxhr = $.getJSON( "sofa.json", function(value) {
+  var jqxhr = $.getJSON( "WebScraper/sofa.json", function(value) {
         console.log( "success" );
          var i = 0;
          let markup = ``

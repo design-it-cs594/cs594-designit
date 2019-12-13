@@ -1,0 +1,222 @@
+[
+  {
+    "ID": 3,
+    "Brand": "INGATORP",
+    "Price": "$99.00",
+    "Image": "https://www.ikea.com/PIAimages/0737121_PE740894_S5.JPG?f=s",
+    "Length": "48 3/8 ",
+    "Width": "30 3/4 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-drop-leaf-table-black-brown-40423106/"
+  },
+  {
+    "ID": 6,
+    "Brand": "INGATORP",
+    "Price": "$99.00",
+    "Image": "https://www.ikea.com/PIAimages/0737122_PE740895_S5.JPG?f=s",
+    "Length": "48 3/8 ",
+    "Width": "30 3/4 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-drop-leaf-table-white-00423108/"
+  },
+  {
+    "ID": 1,
+    "Brand": "EKEDALEN",
+    "Price": "$119.00",
+    "Image": "https://www.ikea.com/PIAimages/0736972_PE740836_S5.JPG?f=s",
+    "Length": "47 1/4 ",
+    "Width": "27 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-brown-80340835/"
+  },
+  {
+    "ID": 5,
+    "Brand": "EKEDALEN",
+    "Price": "$119.00",
+    "Image": "https://www.ikea.com/PIAimages/0736973_PE740837_S5.JPG?f=s",
+    "Length": "47 1/4 ",
+    "Width": "27 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-dark-brown-20340824/"
+  },
+  {
+    "ID": 7,
+    "Brand": "EKEDALEN",
+    "Price": "$119.00",
+    "Image": "https://www.ikea.com/PIAimages/0736975_PE740821_S5.JPG?f=s",
+    "Length": "47 1/4 ",
+    "Width": "27 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-white-70340826/"
+  },
+  {
+    "ID": 2,
+    "Brand": "EKEDALEN",
+    "Price": "$183.00",
+    "Image": "https://www.ikea.com/PIAimages/0736962_PE740826_S5.JPG?f=s",
+    "Length": "70 7/8 ",
+    "Width": "31 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-brown-30340809/"
+  },
+  {
+    "ID": 16,
+    "Brand": "EKEDALEN",
+    "Price": "$183.00",
+    "Image": "https://www.ikea.com/PIAimages/0736963_PE740827_S5.JPG?f=s",
+    "Length": "70 7/8 ",
+    "Width": "31 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-dark-brown-40340804/"
+  },
+  {
+    "ID": 17,
+    "Brand": "EKEDALEN",
+    "Price": "$183.00",
+    "Image": "https://www.ikea.com/PIAimages/0736965_PE740829_S5.JPG?f=s",
+    "Length": "70 7/8 ",
+    "Width": "31 1/2 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-white-70340807/"
+  },
+  {
+    "ID": 10,
+    "Brand": "EKEDALEN",
+    "Price": "$199.00",
+    "Image": "https://www.ikea.com/PIAimages/0657862_PE709998_S5.JPG?f=s",
+    "Length": "47 1/4 ",
+    "Width": "31 1/2 ",
+    "Height": "41 3/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-bar-table-brown-40400529/"
+  },
+  {
+    "ID": 12,
+    "Brand": "EKEDALEN",
+    "Price": "$239.00",
+    "Image": "https://www.ikea.com/PIAimages/0736970_PE740834_S5.JPG?f=s",
+    "Length": "94 1/2 ",
+    "Width": "35 3/8 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-white-70340765/"
+  },
+  {
+    "ID": 13,
+    "Brand": "EKEDALEN",
+    "Price": "$239.00",
+    "Image": "https://www.ikea.com/PIAimages/0736968_PE740832_S5.JPG?f=s",
+    "Length": "94 1/2 ",
+    "Width": "35 3/8 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-dark-brown-20340758/"
+  },
+  {
+    "ID": 18,
+    "Brand": "EKEDALEN",
+    "Price": "$239.00",
+    "Image": "https://www.ikea.com/PIAimages/0736967_PE740831_S5.JPG?f=s",
+    "Length": "94 1/2 ",
+    "Width": "35 3/8 ",
+    "Height": "29 1/2 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ekedalen-extendable-table-brown-90340769/"
+  },
+  {
+    "ID": 14,
+    "Brand": "INGATORP",
+    "Price": "$259.00",
+    "Image": "https://www.ikea.com/PIAimages/0737090_PE740880_S5.JPG?f=s",
+    "Length": "84 5/8 ",
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-extendable-table-black-90222407/"
+  },
+  {
+    "ID": 15,
+    "Brand": "INGATORP",
+    "Price": "$259.00",
+    "Image": "https://www.ikea.com/PIAimages/0737091_PE740881_S5.JPG?f=s",
+    "Length": "84 5/8 ",
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-extendable-table-white-70221423/"
+  },
+  {
+    "ID": 9,
+    "Brand": "INGATORP / INGOLF",
+    "Price": "$415.00",
+    "Image": "https://www.ikea.com/PIAimages/0737939_PE741265_S5.JPG?f=s",
+    "Length": "84 5/8 ",
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingolf-table-and-4-chairs-white-s29917307/"
+  },
+  {
+    "ID": 0,
+    "Brand": "INGATORP / INGOLF",
+    "Price": "$547.00",
+    "Image": "https://www.ikea.com/PIAimages/0737940_PE741266_S5.JPG?f=s",
+    "Length": 61,
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingolf-table-and-4-chairs-black-nolhaga-gray-beige-s99254173/"
+  },
+  {
+    "ID": 4,
+    "Brand": "INGATORP / INGOLF",
+    "Price": "$547.00",
+    "Image": "https://www.ikea.com/PIAimages/0737941_PE741273_S5.JPG?f=s",
+    "Length": 61,
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingolf-table-and-4-chairs-white-nordvalla-beige-s79254169/"
+  },
+  {
+    "ID": 19,
+    "Brand": "INGATORP / INGOLF",
+    "Price": "$605.00",
+    "Image": "https://www.ikea.com/PIAimages/0737626_PE741189_S5.JPG?f=s",
+    "Length": "84 5/8 ",
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingolf-table-and-6-chairs-white-nordvalla-beige-s89280686/"
+  },
+  {
+    "ID": 8,
+    "Brand": "INGATORP / INGATORP",
+    "Price": "$659.00",
+    "Image": "https://www.ikea.com/PIAimages/0737791_PE741257_S5.JPG?f=s",
+    "Length": 61,
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingatorp-table-and-4-chairs-black-s29252200/"
+  },
+  {
+    "ID": 11,
+    "Brand": "INGATORP / INGATORP",
+    "Price": "$659.00",
+    "Image": "https://www.ikea.com/PIAimages/0737792_PE741258_S5.JPG?f=s",
+    "Length": 61,
+    "Width": "34 1/4 ",
+    "Height": "29 1/8 ",
+    "Seller": "IKEA",
+    "ProductLink": "https://www.ikea.com/us/en/p/ingatorp-ingatorp-table-and-4-chairs-white-s19252205/"
+  }
+]
