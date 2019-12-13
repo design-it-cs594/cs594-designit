@@ -120,12 +120,12 @@ function uploadToCloudant(doc) {
     //     imageHolder.appendChild(src);
     //     imageSection.appendChild(imageHolder);
     // CVtext.prepend(imageSection);
-
+        console.log(data)
         // get tags from cloudant
         // add 1.5s delay to give time for serverless function to execute
         setTimeout(function () {
           alert("getCVComponent ....")
-          getCVComponent();
+          // getCVComponent();
           // getDocumentWithId(data.id, doc, 0);
         }, 35000);
 
