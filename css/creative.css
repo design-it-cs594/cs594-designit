@@ -746,3 +746,14 @@ ul.dropdown-lr {
   height: 50%;
   width: 50%;
 }
+.btn-success,.btn-success:hover{
+  color: #fff;
+  background-color: #0c0d0c;
+  border-color: #080908;
+}
+.btn-info, .btn-info:hover{
+  color: #fff;
+  background-color: #0c0d0c;
+  border-color: #080908;
+}
+}
