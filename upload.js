@@ -21,7 +21,7 @@ const CVData = {
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${cvURL}/cv`,
+      url: `${cvURL}/furniture/cv`,
       dataType: 'json',
     })
   }
@@ -103,7 +103,7 @@ function uploadToCloudant(doc) {
           alert("getCVComponent ....")
           getCVComponent();
           // getDocumentWithId(data.id, doc, 0);
-        }, 1500);
+        }, 15000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
