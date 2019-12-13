@@ -143,7 +143,7 @@ function getDocumentWithId(id, dom, tries) {
 function displayTags(data, dom) {
   console.log(data.detectedFurniture)
   console.log(data.dimensions)
-  CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+"!.</p>";
+  CVtext.innerHTML += "<h3>The CV component detected "+data.detectedFurniture.toString()+"!.</h3>";
 
 // data.dimensions.forEach((v, i) => {
 //     var td = document.createElement('td');
@@ -225,10 +225,78 @@ function recommendation(){
         });
 }
 
+function recommendation1(){
+  // alert("in recommendation");
+  console.log(suggestionsSection);
+  suggestionsSection.classList.remove("d-none");
+  suggestionsSection.classList.add("d-block");
+  
+  var jqxhr = $.getJSON( "WebScraper/mattress.json", function(value) {
+        console.log( "success" );
+         var i = 0;
+         let markup = ``
+         let container = document.getElementById("suggestions-class")
+         // alert("Created container")
+         if (value.length%2==1){
+          value.pop();
+         }
+         for(let i = 0; i < value.length; i++){
+            // alert(i)
+            let markup = `<div class="row text-center row-0-gutter">
+          <div class="col-lg-6 ">
+          <a href="`+value[i].ProductLink+`" target="_blank">
+            <div class="ot-portfolio-item ">
+              <figure class="effect-bubba">
+                <img src=`+value[i].Image+` alt="img02" class="img-responsive" style="width: 100%; height: "></img>
+                <figcaption>
+                  <h2>`+value[i].Brand+`</h2>
+                  <p> Brought to you by `+value[i].Seller+`</p>
+                </figcaption>
+              </figure>
+            </div>
+            </a>
+          </div>
+          <br />
+          
+          <div class="col-lg-6 ">
+          <a href="`+value[i+1].ProductLink+`" target="_blank">
+            <div class="ot-portfolio-item">
+              <figure class="effect-bubba" style="border-radius: 30px;">
+                <img src=`+value[i+1].Image+` alt="img02" class="img-responsive" style="width: 100%;"/>
+                
+                <figcaption>
+                  <h2>`+value[i+1].Brand+`</h2>
+                  <p> Brought to you by `+value[i+1].Seller+`</p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          </a>
+        </div> <br />`
+        i = i+1
+        container.innerHTML += markup
+
+
+        console.log(value[i].Brand);
+        console.log(value[i].Price);
+        console.log(value[i].Seller);
+        console.log(value[i].Image);
+        console.log(value[i].ProductLink);
+
+        }
+        });
+}
+
 // editForm.onclick = function() {
 //     recommendation();
 //     return false;
 // }
+
+document.getElementById('prefSubmit').onclick = function() {
+    // form.target = '_blank';
+    // form.submit();
+    recommendation1();
+}
 
 form.onsubmit = function() {
   
