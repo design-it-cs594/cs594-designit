@@ -127,7 +127,7 @@ function uploadToCloudant(doc) {
           alert("getCVComponent ....")
           getCVComponent();
           // getDocumentWithId(data.id, doc, 0);
-        }, 15000);
+        }, 35000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
