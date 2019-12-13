@@ -1,12 +1,16 @@
 let uplaodButton = document.getElementById("uploadImage");
 let selectImage = document.getElementById("selectImage");
 let form = document.forms['upload'];
+let editForm = document.forms['editForm'];
+console.log(editForm);
 let imageDatabase = "images"
 let tagsDatabase = "tags"
 let uploadedImages = document.getElementById("uploadedImages");
 let uploadText = document.getElementById("uploadText");
+let CVtext = document.getElementById("CVtext");
 
-
+let editPreferences = document.getElementById("editPreferences");
+let suggestionsSection = document.getElementById("suggestionsSection");
 
 let usernameCloudant = "b3e64e71-3522-484d-9bf6-7e7595cba22c-bluemix"
 let passwordCloudant = "a98e26011f29480df796b247c94790debd4ea40c5138e6dec34bec83c62f0b19"
@@ -25,17 +29,15 @@ const CVData = {
     //   dataType: 'json',
     //   contentType: "application/json"
     // });
-    var request = require("request");
 
-    var options = { method: 'GET',
-    url: 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture/furniture/cv',
-    headers: { accept: 'application/json' } };
+    
+            CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
 
-    request(options, function (error, response, body) {
-       if (error) return console.error('Failed: %s', error.message);
 
-      console.log('Success: ', body);
-      });
+        console.log(editPreferences);
+        editPreferences.classList.remove("d-none");
+
+        editPreferences.classList.add("d-block");
   }
 }
 var modal = document.getElementById('id01');
@@ -50,6 +52,7 @@ window.onclick = function(event) {
 
 function uploadImage() {
   var image = selectImage.files[0];
+ 
   // name is .name, type is .type
   var fileReader = new FileReader();
   fileReader.readAsDataURL(selectImage.files[0]);
@@ -71,6 +74,13 @@ function uploadImage() {
 }
 
 function loadImageToBrowser(doc, imageToLoad) {
+
+  console.log(uploadText);
+  uploadText.classList.remove("d-none");
+
+  uploadText.classList.add("d-block");
+
+
   var fileReader = new FileReader();
   var image = new Image();
 
@@ -81,9 +91,9 @@ function loadImageToBrowser(doc, imageToLoad) {
   // imageHolder.setAttribute('style', "display:inline;");
   fileReader.readAsDataURL(imageToLoad);
   fileReader.onload = function (readerEvent) {
-    image.src = readerEvent.target.result
-    image.style.height = '50%'
-    image.style.width = '50%'
+    image.src = readerEvent.target.result;
+    image.style.height = '50%';
+    image.style.width = '50%';
     image.className = "uploadedImage";
     imageHolder.appendChild(image);
     imageSection.appendChild(imageHolder);
@@ -108,6 +118,15 @@ function uploadToCloudant(doc) {
 
         // alert("Uploaded the Image Successfully to Cloudant");
 
+    //     var imageSection = document.createElement('div');
+    //     var imageHolder = document.createElement('p');
+    //     imageSection.className = "detectedCVDiv";
+    //     imageHolder.className = "detectedCVP";
+    //     src = "The CV component detected Sofa, Table, Chair, Table lamp";
+    //     // image.className = "CVdetectedText";
+    //     imageHolder.appendChild(src);
+    //     imageSection.appendChild(imageHolder);
+    // CVtext.prepend(imageSection);
 
         // get tags from cloudant
         // add 1.5s delay to give time for serverless function to execute
@@ -184,6 +203,10 @@ function displayTags(data, dom) {
 
 function recommendation(){
   // alert("in recommendation");
+  console.log(suggestionsSection);
+  suggestionsSection.classList.remove("d-none");
+  suggestionsSection.classList.add("d-block");
+  
   var jqxhr = $.getJSON( "sofa.json", function(value) {
         console.log( "success" );
          var i = 0;
@@ -240,13 +263,14 @@ function recommendation(){
         });
 }
 
+// editForm.onclick = function() {
+//     recommendation();
+//     return false;
+// }
+
 form.onsubmit = function() {
   
   // Showing all d-none classes
-  console.log(uploadText);
-  uploadText.classList.remove("d-none");
-
-  uploadText.classList.add("d-block");
 
   uploadImage()
 
@@ -258,7 +282,6 @@ form.onsubmit = function() {
     //     alert("retrieved")
     //   }
     // });
-  recommendation()
-
+recommendation();
   return false;
 }

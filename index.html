@@ -234,10 +234,11 @@
                 <div class=" col-12 padding  text-center" >
                   <p>The uploaded image appears here</p>
                   <div class="uploadedImages" id="uploadedImages"></div>
+                   <div class="CVtext" id="CVtext"></div>
                 </div>
             </div>
             <p class="text-dark-faded mb-4">  <br></p>
-            <div class="row d-none">
+            <div id = "editPreferences" class="row d-none">
               <div class="col text-center">
                 <input class="givePreferences btn btn-primary" onclick='document.getElementById("design").style.display="block"' style="width:auto;" id="givePreferences" type="submit" value="Edit Preferences" />
               </div>
@@ -261,7 +262,7 @@
                         <div class="col-6 padding col-centered">
 
                             <div class="container-bg form-outline">
-                                <form class="modal-content">
+                                <form name = "EditForm" class="modal-content">
                                   <br />
                                     <fieldset>                                       
                                         <!-- <fieldset class="form-group"> -->
@@ -272,13 +273,13 @@
                                           <div class="form-check">
                                             <label style="color: black" class="form-check-label">
                                               <input  class="form-check-input" type="checkbox" value="" checked="">
-                                              Study Table
+                                              Sofa
                                             </label>
                                           </div>
                                           <div class="form-check disabled">
                                             <label style="color: black" class="form-check-label">
                                               <input class="form-check-input" type="checkbox" value="">
-                                              Chair
+                                              Mattress
                                             </label>
                                           </div>
                                           <div class="form-check disabled">
@@ -290,7 +291,7 @@
                                           <div class="form-check disabled">
                                             <label style="color: black" class="form-check-label">
                                               <input class="form-check-input" type="checkbox" value="">
-                                              Dining Set
+                                              Table
                                             </label>
                                           </div>
                                           <br>
@@ -299,8 +300,8 @@
                                           <br>
                                           <div class="form-group">
                                             <legend style="color: black">3. Correct the dimensions of your room(in ft): </legend>
-                                            <legend> Length: <input type="email" class=".form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Eg. 35"></legend>
-                                            <legend>Width: <input type="email" class=".form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Eg. 20"></legend>
+                                            <legend> Length: <input type="number" class=".form-control-sm" id="length" placeholder="Eg. 35"></legend>
+                                            <legend>Width: <input type="number" class=".form-control-sm" id="width" placeholder="Eg. 20"></legend>
                                             
                                           </div>
                                           <!-- <br> -->
@@ -330,7 +331,7 @@
 
 
           
-    <section class="bg-light d-none" id="shop">
+    <section id = "suggestionsSection" class="bg-light d-none" id="shop">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
