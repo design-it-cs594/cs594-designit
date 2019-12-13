@@ -127,7 +127,7 @@ function uploadToCloudant(doc) {
           alert("getCVComponent ....")
           // getCVComponent();
           getDocumentWithId(data.id, doc, 0);
-        }, 5000);
+        }, 30000);
 
       },
       error: function (jqXHR, textStatus, errorThrown) {
@@ -180,7 +180,7 @@ function getDocumentWithId(id, dom, tries) {
           // try again in 3 seconds
           setTimeout(function() {
             getDocumentWithId(id, dom, tries+1)
-          },3000);
+          },5000);
         } else {
           console.log("No document found after 20 tries")
         }
@@ -189,16 +189,18 @@ function getDocumentWithId(id, dom, tries) {
 }
 
 function displayTags(data, dom) {
-  dom.id = data._id;
-  var tags = document.createElement('div');
-  tags.className = "imageLabels";
-  for (var index in data.watsonResults[0].classes) {
-    var tag = document.createElement('div');
-    tag.className = "imageLabel";
-    tag.innerHTML = data.watsonResults[0].classes[index].class
-    tags.appendChild(tag);
-  }
-  dom.appendChild(tags)
+  // dom.id = data._id;
+  // var tags = document.createElement('div');
+  // tags.className = "imageLabels";
+  console.log(data.detectedFurniture)
+  console.log(data.dimensions)
+  // for (var index in data.watsonResults[0].classes) {
+  //   var tag = document.createElement('div');
+  //   tag.className = "imageLabel";
+  //   tag.innerHTML = data.watsonResults[0].classes[index].class
+//     tags.appendChild(tag);
+//   }
+//   dom.appendChild(tags)
 }
 
 function recommendation(){
