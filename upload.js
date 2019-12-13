@@ -169,7 +169,7 @@ function getDocumentWithId(id, dom, tries) {
       },
       success: function (data) {
         console.log(data)
-        // displayTags(data, dom)
+        displayTags(data, dom)
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log(errorThrown);
