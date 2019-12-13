@@ -30,14 +30,11 @@ const CVData = {
     //   contentType: "application/json"
     // });
 
-    
-            CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
-
-
-        console.log(editPreferences);
-        editPreferences.classList.remove("d-none");
-
-        editPreferences.classList.add("d-block");
+    console.log("In CVData get")
+    CVtext.innerHTML += "<p>The CV component detected Sofa, Table, Chair, Table lamp</p>"
+    console.log(editPreferences);
+    editPreferences.classList.remove("d-none");
+    editPreferences.classList.add("d-block");
   }
 }
 var modal = document.getElementById('id01');
