@@ -23,9 +23,10 @@ const cvURL = 'https://aeea40b2.us-south.apigw.appdomain.cloud/furniture';
 
 const CVData = {
   get() {
+    console.log("ajax call")
     return $.ajax({
       type: 'GET',
-      url: `${cvURL}/furniture/cv`,
+      url: `${cvURL}/getcvoutput`,
       dataType: 'json',
       contentType: "application/json"
     });
@@ -152,7 +153,7 @@ function getCVComponent() {
     console.log(editPreferences);
     editPreferences.classList.remove("d-none");
     editPreferences.classList.add("d-block");
-    
+
     console.log(result);
   });
   alert("after CVData get....")
