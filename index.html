@@ -45,7 +45,7 @@
               <a class="nav-link js-scroll-trigger" href="#design">Design</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#shop">Shop</a>
+              <a class="nav-link js-scroll-trigger" href="#suggestionsSection">Shop</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -246,9 +246,11 @@
                 </div>
             </div>
             <p class="text-dark-faded mb-4">  <br></p>
-            <div id = "editPreferences" class="row d-none">
+            <div id = "editPreferences" class="row ">
               <div class="col text-center">
-                <input class="givePreferences btn btn-primary" onclick='document.getElementById("design").style.display="block"' style="width:auto;" id="givePreferences" type="submit" value="Edit Preferences" />
+                <!-- <input class="givePreferences btn btn-primary" type="submit" value="Edit Preferences" /> -->
+
+              <a class="btn btn-light btn-xl js-scroll-trigger" href="#EditForm">Scroll to Edit Preferences</a>
               </div>
             </div>
 
@@ -259,7 +261,7 @@
 
     
     <!-- Design -->
-    <div id="design" class="modal">
+    <div id="design">
       
           <!-- <div class="col-lg-8 mx-auto text-center"> -->
             <h2 class="section-heading text-center text-dark">Innovate your room</h2>
@@ -270,7 +272,7 @@
                         <div class="col-6 padding col-centered">
 
                             <div class="container-bg form-outline">
-                                <form name = "EditForm" class="modal-content">
+                                <form id = "EditForm" class="modal-content">
                                   <br />
                                     <fieldset>                                       
                                         <!-- <fieldset class="form-group"> -->
@@ -321,8 +323,10 @@
                                             <div class="col-lg-6">
                                               <button id = "prefSubmit" type="submit" class="btn btn-primary">Submit</button>
                                             </div> -->
-                                             <input class="prefSubmit btn btn-primary" id="prefSubmit" type="submit" value="Get Suggestions" />
-                                             <input class="cancelbtn btn btn-primary" onclick="document.getElementById('design').style.display='none'" id="cancelbtn" type="submit" value="Cancel" />
+                                       <!--       <input class="prefSubmit btn btn-primary" id="prefSubmit" type="submit" value="Get Suggestions" />
+                                             <input class="cancelbtn btn btn-primary" onclick="document.getElementById('design').style.display='none'" id="cancelbtn" type="submit" value="Cancel" /> -->
+
+                                              <a class="btn btn-light btn-xl js-scroll-trigger" href="#suggestionsSection">Get Suggestions</a>
                                           </div>
                                         </div>
                                         <!-- <br /> -->
@@ -331,7 +335,7 @@
                                 </form>
                             </div>
                         </div>
-                        </div> -->
+                        </div> 
                     </div>
         </div>
         
@@ -341,7 +345,7 @@
 
 
           
-    <section id = "suggestionsSection" class="bg-light d-none" id="shop">
+    <section id = "suggestionsSection" class="bg-light ">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 mx-auto text-center">
