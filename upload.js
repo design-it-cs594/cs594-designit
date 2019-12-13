@@ -19,19 +19,7 @@ let passwordCloudant = "a98e26011f29480df796b247c94790debd4ea40c5138e6dec34bec83
 const cloudantURL = new URL("https://" + usernameCloudant + ":" + passwordCloudant + "@" + usernameCloudant + ".cloudant.com");
 
 const apiUrl = 'https://609a4395.us-south.apigw.appdomain.cloud/guestbook';
-const cvURL = 'https://9882c7ff.us-south.apigw.appdomain.cloud/furniture';
 
-const CVData = {
-  get() {
-    console.log("ajax call")
-    return $.ajax({
-      type: 'GET',
-      url: `${cvURL}/getcvoutput`,
-      dataType: 'json',
-      contentType: "application/json"
-    });
-  }
-}
 var modal = document.getElementById('id01');
 
 // When the user clicks anywhere outside of the modal, close it
@@ -108,7 +96,7 @@ function uploadToCloudant(doc) {
 
     
         alert("CV component detecting objects and its dimensions!");
-        uploadText.innerHTML += "<p>The CV component is detecting objects and its dimensions!</p>";
+        // uploadText.innerHTML += "<p>The CV component is detecting objects and its dimensions!</p>";
         // get tags from cloudant
         // add 20 s delay to give time for serverless function to execute
         setTimeout(function () {
@@ -124,19 +112,6 @@ function uploadToCloudant(doc) {
   });
 }
 
-function getCVComponent() {
-  // body...
-
-  CVData.get().done(function (result) {
-    // body...
-    alert("CVData ....")
-    if (!result) {
-      return;
-    }
-
-    console.log(result);
-  });
-}
 function getDocumentWithId(id, dom, tries) {
   $.ajax({
       url: cloudantURL.origin + "/" + tagsDatabase + "/" + id,
@@ -170,16 +145,16 @@ function displayTags(data, dom) {
   console.log(data.dimensions)
   CVtext.innerHTML += "<p>The CV component detected "+data.detectedFurniture.toString()+"!.</p>";
 
-data.dimensions.forEach((v, i) => {
-    var td = document.createElement('td');
+// data.dimensions.forEach((v, i) => {
+//     var td = document.createElement('td');
     
-    if (!(i % 4)) {
-        tr = document.createElement('tr');
-        document.getElementById('table0').appendChild(tr);
-    }
-    td.appendChild(document.createTextNode(v));
-    tr.appendChild(td);
-});
+//     if (!(i % 4)) {
+//         tr = document.createElement('tr');
+//         document.getElementById('table0').appendChild(tr);
+//     }
+//     td.appendChild(document.createTextNode(v));
+//     tr.appendChild(td);
+// });
    // of dimensions: "+data.dimensions.toString()+" (inches) 
     console.log(editPreferences);
     editPreferences.classList.remove("d-none");
